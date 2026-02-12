@@ -8,6 +8,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Results Page (Phase 5)** - Comprehensive exam results with detailed review
+  - `ScoreCard` component:
+    - Large score display on Microsoft scale (0-1000)
+    - Pass/fail banner with visual indicators (🎉 or 😔)
+    - Progress bar showing score relative to passing threshold
+    - Statistics grid: percentage, correct count, incorrect count, time spent
+    - Certification information display
+  - `ResultsSummary` component:
+    - Performance level classification (Excellent, Very Good, Good, Sufficient, Insufficient)
+    - Topic performance breakdown with visual bars
+    - Individual topic scores with percentages
+    - Weak topics alert (below 70%)
+    - Strong topics highlight (above 80%)
+  - `QuestionReview` component:
+    - Complete question-by-question review
+    - Filter options: all questions, correct only, incorrect only
+    - Visual indicators for correct/incorrect answers
+    - Detailed explanation for each question
+    - Reference links to official documentation
+    - User answer vs correct answer comparison
+    - Topic and difficulty badges
+  - `ResultsPage` integration:
+    - "Repeat Exam" button (same configuration)
+    - "Repeat Incorrect Only" button (practice weak areas)
+    - "New Exam" button (return to home)
+    - Automatic results loading from localStorage
+    - Responsive layout for all screen sizes
 - **Exam Engine (Phase 4)** - Core functionality for simulated exams
   - `ExamContext` with React Context + useReducer for global exam state management
   - `useExam` hook for exam logic (start, answer selection, navigation, finish)

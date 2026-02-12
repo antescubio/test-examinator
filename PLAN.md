@@ -341,7 +341,7 @@ Cada fase es independiente y debe ejecutarse en orden. Cada una produce un commi
 
 ---
 
-### FASE 5: Pantalla de resultados con explicaciones
+### FASE 5: Pantalla de resultados con explicaciones ✅
 
 **Objetivo:** Mostrar resultados detallados con revisión de cada pregunta.
 
