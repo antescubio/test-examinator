@@ -1,7 +1,7 @@
 {
   "certification": "AZ-900",
-  "version": "1.0",
-  "totalQuestions": 10,
+  "version": "2.0",
+  "totalQuestions": 65,
   "questions": [
     {
       "id": "az900-001",
@@ -11,43 +11,17 @@
         "en": "What is Azure Resource Manager (ARM)?"
       },
       "options": [
-        {
-          "id": "A",
-          "text": {
-            "es": "Un servicio de despliegue y gestión de recursos de Azure",
-            "en": "A deployment and management service for Azure resources"
-          }
-        },
-        {
-          "id": "B",
-          "text": {
-            "es": "Una base de datos relacional en la nube",
-            "en": "A cloud relational database"
-          }
-        },
-        {
-          "id": "C",
-          "text": {
-            "es": "Un servicio de monitorización de aplicaciones",
-            "en": "An application monitoring service"
-          }
-        },
-        {
-          "id": "D",
-          "text": {
-            "es": "Un firewall de aplicaciones web",
-            "en": "A web application firewall"
-          }
-        }
+        { "id": "A", "text": { "es": "Un servicio de despliegue y gestión de recursos de Azure", "en": "A deployment and management service for Azure resources" } },
+        { "id": "B", "text": { "es": "Una base de datos relacional en la nube", "en": "A cloud relational database" } },
+        { "id": "C", "text": { "es": "Un servicio de monitorización de aplicaciones", "en": "An application monitoring service" } },
+        { "id": "D", "text": { "es": "Un firewall de aplicaciones web", "en": "A web application firewall" } }
       ],
       "correctAnswers": ["A"],
       "explanation": {
         "es": "Azure Resource Manager (ARM) es el servicio de despliegue y gestión de Azure. Proporciona una capa de gestión que permite crear, actualizar y eliminar recursos en la suscripción de Azure de forma consistente.",
         "en": "Azure Resource Manager (ARM) is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure subscription consistently."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"],
       "topic": "Azure Architecture",
       "difficulty": "easy"
     },
@@ -66,12 +40,10 @@
       ],
       "correctAnswers": ["A", "B", "C"],
       "explanation": {
-        "es": "Los tres modelos principales de servicio en la nube son IaaS (Infraestructura como Servicio), PaaS (Plataforma como Servicio) y SaaS (Software como Servicio). DaaS es un tipo específico de servicio pero no forma parte de los tres modelos fundamentales.",
-        "en": "The three primary cloud service models are IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service). DaaS is a specific type of service but not part of the three fundamental models."
+        "es": "Los tres modelos principales de servicio en la nube son IaaS, PaaS y SaaS. DaaS es un tipo específico de servicio pero no forma parte de los tres modelos fundamentales.",
+        "en": "The three primary cloud service models are IaaS, PaaS, and SaaS. DaaS is a specific type of service but not part of the three fundamental models."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"],
       "topic": "Cloud Concepts",
       "difficulty": "easy"
     },
@@ -90,12 +62,10 @@
       ],
       "correctAnswers": ["C"],
       "explanation": {
-        "es": "La nube híbrida es un entorno informático que combina una nube pública y una nube privada, permitiendo que los datos y las aplicaciones se compartan entre ellas.",
-        "en": "Hybrid cloud is a computing environment that combines a public cloud and a private cloud, allowing data and applications to be shared between them."
+        "es": "La nube híbrida combina una nube pública y una privada, permitiendo compartir datos y aplicaciones entre ellas.",
+        "en": "Hybrid cloud combines a public and a private cloud, allowing data and applications to be shared between them."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/"],
       "topic": "Cloud Concepts",
       "difficulty": "easy"
     },
@@ -114,12 +84,10 @@
       ],
       "correctAnswers": ["B"],
       "explanation": {
-        "es": "Azure Files ofrece recursos compartidos de archivos en la nube completamente administrados a los que se puede acceder mediante el protocolo SMB (Server Message Block) estándar del sector.",
-        "en": "Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol."
+        "es": "Azure Files ofrece recursos compartidos de archivos en la nube accesibles mediante el protocolo SMB estándar.",
+        "en": "Azure Files offers fully managed file shares in the cloud accessible via the standard SMB protocol."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"],
       "topic": "Azure Services",
       "difficulty": "medium"
     },
@@ -138,12 +106,10 @@
       ],
       "correctAnswers": ["A", "B"],
       "explanation": {
-        "es": "La alta disponibilidad y la escalabilidad son dos de los principales beneficios de la computación en la nube. Los gastos de capital se reducen (no aumentan) y no se tiene control físico directo del hardware.",
-        "en": "High availability and scalability are two of the main benefits of cloud computing. Capital expenses are reduced (not increased) and you don't have direct physical control of the hardware."
+        "es": "La alta disponibilidad y la escalabilidad son beneficios clave. Los gastos de capital se reducen y no se tiene control físico directo del hardware.",
+        "en": "High availability and scalability are key benefits. Capital expenses are reduced and you don't have direct physical control of hardware."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/"],
       "topic": "Cloud Concepts",
       "difficulty": "easy"
     },
@@ -162,12 +128,10 @@
       ],
       "correctAnswers": ["A"],
       "explanation": {
-        "es": "El modelo de pago por uso (Pay-as-you-go) permite pagar solo por los recursos de computación que se utilizan, sin costos iniciales ni compromisos a largo plazo.",
-        "en": "The Pay-as-you-go pricing model allows you to pay only for the compute resources you use, with no upfront costs or long-term commitments."
+        "es": "El modelo pay-as-you-go permite pagar solo por los recursos de computación que se utilizan, sin costos iniciales.",
+        "en": "The pay-as-you-go pricing model allows you to pay only for the compute resources you use, with no upfront costs."
       },
-      "references": [
-        "https://azure.microsoft.com/en-us/pricing/"
-      ],
+      "references": ["https://azure.microsoft.com/en-us/pricing/"],
       "topic": "Pricing",
       "difficulty": "easy"
     },
@@ -186,12 +150,10 @@
       ],
       "correctAnswers": ["B"],
       "explanation": {
-        "es": "Azure DDoS Protection proporciona contramedidas mejoradas de DDoS para defender las aplicaciones contra ataques DDoS. Se combina con las mejores prácticas de diseño de aplicaciones para proporcionar defensa contra ataques DDoS.",
-        "en": "Azure DDoS Protection provides enhanced DDoS mitigation features to defend applications against DDoS attacks. It is combined with application design best practices to provide defense against DDoS attacks."
+        "es": "Azure DDoS Protection proporciona contramedidas mejoradas de DDoS para defender las aplicaciones contra ataques.",
+        "en": "Azure DDoS Protection provides enhanced DDoS mitigation features to defend applications against attacks."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview"],
       "topic": "Security",
       "difficulty": "medium"
     },
@@ -210,12 +172,10 @@
       ],
       "correctAnswers": ["A"],
       "explanation": {
-        "es": "Una región de Azure es un conjunto de datacenters implementados dentro de un perímetro definido por latencia y conectados a través de una red regional dedicada de baja latencia.",
-        "en": "An Azure region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network."
+        "es": "Una región de Azure es un conjunto de datacenters conectados a través de una red regional dedicada de baja latencia.",
+        "en": "An Azure region is a set of datacenters connected through a dedicated regional low-latency network."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"],
       "topic": "Azure Architecture",
       "difficulty": "easy"
     },
@@ -234,13 +194,10 @@
       ],
       "correctAnswers": ["A", "B"],
       "explanation": {
-        "es": "Azure SQL Database y Azure Cosmos DB son servicios de base de datos administrados. Azure Blob Storage es almacenamiento de objetos y Azure File Sync es un servicio de sincronización de archivos.",
-        "en": "Azure SQL Database and Azure Cosmos DB are managed database services. Azure Blob Storage is object storage and Azure File Sync is a file synchronization service."
+        "es": "Azure SQL Database y Azure Cosmos DB son servicios de base de datos administrados. Blob Storage es almacenamiento de objetos.",
+        "en": "Azure SQL Database and Azure Cosmos DB are managed database services. Blob Storage is object storage."
       },
-      "references": [
-        "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview",
-        "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
-      ],
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"],
       "topic": "Azure Services",
       "difficulty": "easy"
     },
@@ -259,14 +216,1482 @@
       ],
       "correctAnswers": ["B"],
       "explanation": {
-        "es": "Azure Pricing Calculator ayuda a estimar los costos de los servicios de Azure antes de implementarlos. Azure Cost Management se usa para analizar costos después del despliegue.",
-        "en": "Azure Pricing Calculator helps estimate the costs of Azure services before deploying them. Azure Cost Management is used to analyze costs after deployment."
+        "es": "Azure Pricing Calculator ayuda a estimar los costos antes de implementar servicios.",
+        "en": "Azure Pricing Calculator helps estimate costs before deploying services."
       },
-      "references": [
-        "https://azure.microsoft.com/en-us/pricing/calculator/"
-      ],
+      "references": ["https://azure.microsoft.com/en-us/pricing/calculator/"],
       "topic": "Pricing",
       "difficulty": "easy"
+    },
+    {
+      "id": "az900-011",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada una de las siguientes afirmaciones sobre modelos de nube, indica si son verdaderas o falsas.",
+        "en": "For each of the following statements about cloud models, indicate whether they are true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "En una nube pública, los recursos son propiedad de un proveedor de servicios en la nube externo y se administran a través de él.", "en": "In a public cloud, resources are owned and managed by a third-party cloud service provider." } },
+        { "id": "s2", "text": { "es": "Una nube privada se usa exclusivamente por una sola organización.", "en": "A private cloud is used exclusively by a single organization." } },
+        { "id": "s3", "text": { "es": "Una nube híbrida combina únicamente nubes públicas de diferentes proveedores.", "en": "A hybrid cloud combines only public clouds from different providers." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "yes", "s3": "no" },
+      "explanation": {
+        "es": "Las nubes públicas son propiedad de un proveedor externo y la nube privada es de uso exclusivo de una organización. La nube híbrida combina nubes públicas y privadas, no solo públicas.",
+        "en": "Public clouds are owned by a third-party provider, private clouds are exclusively for one organization. Hybrid cloud combines public and private clouds, not just public ones."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-012",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada una de las siguientes afirmaciones sobre el modelo de responsabilidad compartida, indica si son verdaderas o falsas.",
+        "en": "For each of the following statements about the shared responsibility model, indicate whether they are true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "En IaaS, el cliente es responsable de la gestión del sistema operativo.", "en": "In IaaS, the customer is responsible for operating system management." } },
+        { "id": "s2", "text": { "es": "En SaaS, el proveedor es responsable de la seguridad de la infraestructura física.", "en": "In SaaS, the provider is responsible for the security of the physical infrastructure." } },
+        { "id": "s3", "text": { "es": "En PaaS, el cliente es responsable de la gestión de la infraestructura de red.", "en": "In PaaS, the customer is responsible for network infrastructure management." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "yes", "s3": "no" },
+      "explanation": {
+        "es": "En IaaS el cliente gestiona el SO. En SaaS el proveedor gestiona toda la infraestructura. En PaaS la red la gestiona el proveedor.",
+        "en": "In IaaS the customer manages the OS. In SaaS the provider manages all infrastructure. In PaaS the network is managed by the provider."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"],
+      "topic": "Cloud Concepts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-013",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada una de las siguientes afirmaciones sobre zonas de disponibilidad de Azure, indica si son verdaderas o falsas.",
+        "en": "For each of the following statements about Azure availability zones, indicate whether they are true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Las zonas de disponibilidad están ubicadas dentro de una misma región de Azure.", "en": "Availability zones are located within the same Azure region." } },
+        { "id": "s2", "text": { "es": "Cada zona de disponibilidad tiene alimentación, refrigeración y redes independientes.", "en": "Each availability zone has independent power, cooling, and networking." } },
+        { "id": "s3", "text": { "es": "Todas las regiones de Azure soportan zonas de disponibilidad.", "en": "All Azure regions support availability zones." } },
+        { "id": "s4", "text": { "es": "Las zonas de disponibilidad protegen contra fallos de toda una región.", "en": "Availability zones protect against failures of an entire region." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "yes", "s3": "no", "s4": "no" },
+      "explanation": {
+        "es": "Las zonas de disponibilidad están dentro de una región con infraestructura independiente. No todas las regiones las soportan. Protegen contra fallos de datacenter, no de toda la región.",
+        "en": "Availability zones are within a region with independent infrastructure. Not all regions support them. They protect against datacenter failures, not entire region failures."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-014",
+      "type": "dragdrop",
+      "question": {
+        "es": "Ordena los siguientes niveles de SLA de Azure de MENOR a MAYOR disponibilidad.",
+        "en": "Order the following Azure SLA levels from LOWEST to HIGHEST availability."
+      },
+      "options": [
+        { "id": "D1", "text": { "es": "99.9% (tres nueves)", "en": "99.9% (three nines)" } },
+        { "id": "D2", "text": { "es": "99.99% (cuatro nueves)", "en": "99.99% (four nines)" } },
+        { "id": "D3", "text": { "es": "99.95%", "en": "99.95%" } },
+        { "id": "D4", "text": { "es": "99.999% (cinco nueves)", "en": "99.999% (five nines)" } }
+      ],
+      "correctAnswers": ["D1", "D3", "D2", "D4"],
+      "explanation": {
+        "es": "El orden correcto de menor a mayor es: 99.9% < 99.95% < 99.99% < 99.999%. Cada nivel adicional reduce significativamente el tiempo de inactividad permitido.",
+        "en": "The correct order from lowest to highest is: 99.9% < 99.95% < 99.99% < 99.999%. Each additional level significantly reduces allowed downtime."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/reliability/availability-service-by-category"],
+      "topic": "Cloud Concepts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-015",
+      "type": "dragdrop",
+      "question": {
+        "es": "Ordena las siguientes capas de defensa en profundidad de Azure desde la capa MÁS EXTERNA a la MÁS INTERNA.",
+        "en": "Order the following Azure defense-in-depth layers from the OUTERMOST to the INNERMOST."
+      },
+      "options": [
+        { "id": "D1", "text": { "es": "Seguridad física", "en": "Physical security" } },
+        { "id": "D2", "text": { "es": "Red", "en": "Network" } },
+        { "id": "D3", "text": { "es": "Datos", "en": "Data" } },
+        { "id": "D4", "text": { "es": "Aplicación", "en": "Application" } },
+        { "id": "D5", "text": { "es": "Identidad y acceso", "en": "Identity and access" } }
+      ],
+      "correctAnswers": ["D1", "D5", "D2", "D4", "D3"],
+      "explanation": {
+        "es": "Las capas de defensa en profundidad de externa a interna son: Seguridad física → Identidad y acceso → Red → Aplicación → Datos.",
+        "en": "Defense-in-depth layers from outermost to innermost: Physical security → Identity & access → Network → Application → Data."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/security/fundamentals/overview"],
+      "topic": "Security",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az900-016",
+      "type": "dropdown",
+      "question": {
+        "es": "Completa las siguientes afirmaciones seleccionando la opción correcta de cada lista desplegable.",
+        "en": "Complete the following statements by selecting the correct option from each dropdown."
+      },
+      "context": {
+        "es": "Tu empresa necesita migrar varias cargas de trabajo a Azure. Debes seleccionar el servicio correcto para cada escenario.",
+        "en": "Your company needs to migrate several workloads to Azure. You need to select the correct service for each scenario."
+      },
+      "dropdowns": [
+        {
+          "id": "dd1",
+          "label": { "es": "Para ejecutar código sin gestionar servidores, debes usar ___", "en": "To run code without managing servers, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+            { "id": "o2", "text": { "es": "Azure Functions", "en": "Azure Functions" } },
+            { "id": "o3", "text": { "es": "Azure Kubernetes Service", "en": "Azure Kubernetes Service" } }
+          ]
+        },
+        {
+          "id": "dd2",
+          "label": { "es": "Para alojar aplicaciones web sin gestionar infraestructura, debes usar ___", "en": "To host web apps without managing infrastructure, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+            { "id": "o2", "text": { "es": "Azure App Service", "en": "Azure App Service" } },
+            { "id": "o3", "text": { "es": "Azure Container Instances", "en": "Azure Container Instances" } }
+          ]
+        },
+        {
+          "id": "dd3",
+          "label": { "es": "Para tener control total sobre el sistema operativo, debes usar ___", "en": "To have full control over the operating system, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+            { "id": "o2", "text": { "es": "Azure Functions", "en": "Azure Functions" } },
+            { "id": "o3", "text": { "es": "Azure App Service", "en": "Azure App Service" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "dd1": "o2", "dd2": "o2", "dd3": "o1" },
+      "explanation": {
+        "es": "Azure Functions es serverless. Azure App Service es PaaS para web apps. Azure Virtual Machines ofrece control total del SO (IaaS).",
+        "en": "Azure Functions is serverless. Azure App Service is PaaS for web apps. Azure Virtual Machines offers full OS control (IaaS)."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-017",
+      "type": "dropdown",
+      "question": {
+        "es": "Completa las siguientes afirmaciones sobre herramientas de gestión de Azure.",
+        "en": "Complete the following statements about Azure management tools."
+      },
+      "context": {
+        "es": "Azure proporciona varias herramientas para administrar y gestionar los recursos en la nube.",
+        "en": "Azure provides several tools to administer and manage cloud resources."
+      },
+      "dropdowns": [
+        {
+          "id": "dd1",
+          "label": { "es": "Para gestionar recursos mediante una interfaz gráfica web, debes usar ___", "en": "To manage resources via a web graphical interface, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Portal", "en": "Azure Portal" } },
+            { "id": "o2", "text": { "es": "Azure CLI", "en": "Azure CLI" } },
+            { "id": "o3", "text": { "es": "Azure PowerShell", "en": "Azure PowerShell" } }
+          ]
+        },
+        {
+          "id": "dd2",
+          "label": { "es": "Para automatizar tareas con scripts multiplataforma basados en bash, debes usar ___", "en": "To automate tasks with cross-platform bash-based scripts, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Portal", "en": "Azure Portal" } },
+            { "id": "o2", "text": { "es": "Azure CLI", "en": "Azure CLI" } },
+            { "id": "o3", "text": { "es": "Azure PowerShell", "en": "Azure PowerShell" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "dd1": "o1", "dd2": "o2" },
+      "explanation": {
+        "es": "Azure Portal es la interfaz gráfica web. Azure CLI permite automatización con scripts basados en bash.",
+        "en": "Azure Portal is the web graphical interface. Azure CLI enables automation with bash-based scripts."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-018",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada servicio de Azure con su descripción correcta.",
+        "en": "Match each Azure service with its correct description."
+      },
+      "leftLabel": { "es": "Servicio", "en": "Service" },
+      "rightLabel": { "es": "Descripción", "en": "Description" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "Azure Blob Storage", "en": "Azure Blob Storage" } },
+        { "id": "L2", "text": { "es": "Azure SQL Database", "en": "Azure SQL Database" } },
+        { "id": "L3", "text": { "es": "Azure Cosmos DB", "en": "Azure Cosmos DB" } },
+        { "id": "L4", "text": { "es": "Azure Queue Storage", "en": "Azure Queue Storage" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Base de datos relacional administrada", "en": "Managed relational database" } },
+        { "id": "R2", "text": { "es": "Almacenamiento de objetos no estructurados", "en": "Unstructured object storage" } },
+        { "id": "R3", "text": { "es": "Base de datos NoSQL multimodelo distribuida globalmente", "en": "Globally distributed multi-model NoSQL database" } },
+        { "id": "R4", "text": { "es": "Almacenamiento de mensajes entre componentes de aplicación", "en": "Message storage between application components" } }
+      ],
+      "correctAnswers": { "L1": "R2", "L2": "R1", "L3": "R3", "L4": "R4" },
+      "explanation": {
+        "es": "Blob Storage es para objetos no estructurados. SQL Database es relacional administrada. Cosmos DB es NoSQL distribuida globalmente. Queue Storage almacena mensajes.",
+        "en": "Blob Storage is for unstructured objects. SQL Database is managed relational. Cosmos DB is globally distributed NoSQL. Queue Storage stores messages."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-019",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada modelo de servicio en la nube con su nivel de responsabilidad del cliente.",
+        "en": "Match each cloud service model with its level of customer responsibility."
+      },
+      "leftLabel": { "es": "Modelo", "en": "Model" },
+      "rightLabel": { "es": "Responsabilidad del cliente", "en": "Customer responsibility" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "IaaS", "en": "IaaS" } },
+        { "id": "L2", "text": { "es": "PaaS", "en": "PaaS" } },
+        { "id": "L3", "text": { "es": "SaaS", "en": "SaaS" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Solo datos e identidades", "en": "Only data and identities" } },
+        { "id": "R2", "text": { "es": "SO, middleware, datos, aplicaciones", "en": "OS, middleware, data, applications" } },
+        { "id": "R3", "text": { "es": "Aplicaciones, datos e identidades", "en": "Applications, data, and identities" } }
+      ],
+      "correctAnswers": { "L1": "R2", "L2": "R3", "L3": "R1" },
+      "explanation": {
+        "es": "En IaaS el cliente gestiona desde el SO en adelante. En PaaS, gestiona las aplicaciones, datos e identidades. En SaaS, solo los datos e identidades.",
+        "en": "In IaaS the customer manages from the OS up. In PaaS, they manage apps, data, and identities. In SaaS, only data and identities."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"],
+      "topic": "Cloud Concepts",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-020",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada servicio de seguridad de Azure con su función principal.",
+        "en": "Match each Azure security service with its primary function."
+      },
+      "leftLabel": { "es": "Servicio", "en": "Service" },
+      "rightLabel": { "es": "Función", "en": "Function" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "Microsoft Defender for Cloud", "en": "Microsoft Defender for Cloud" } },
+        { "id": "L2", "text": { "es": "Azure Firewall", "en": "Azure Firewall" } },
+        { "id": "L3", "text": { "es": "Azure Key Vault", "en": "Azure Key Vault" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Filtrado de tráfico de red a nivel de aplicación y red", "en": "Network and application-level traffic filtering" } },
+        { "id": "R2", "text": { "es": "Gestión centralizada de secretos, claves y certificados", "en": "Centralized management of secrets, keys, and certificates" } },
+        { "id": "R3", "text": { "es": "Evaluación de seguridad y recomendaciones para recursos", "en": "Security assessment and recommendations for resources" } }
+      ],
+      "correctAnswers": { "L1": "R3", "L2": "R1", "L3": "R2" },
+      "explanation": {
+        "es": "Defender for Cloud evalúa la seguridad y da recomendaciones. Azure Firewall filtra tráfico de red. Key Vault gestiona secretos y claves.",
+        "en": "Defender for Cloud assesses security and provides recommendations. Azure Firewall filters network traffic. Key Vault manages secrets and keys."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-021",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona la respuesta correcta para completar cada afirmación sobre los servicios de computación de Azure.",
+        "en": "Select the correct answer to complete each statement about Azure compute services."
+      },
+      "context": {
+        "es": "Tu empresa está planificando migrar sus cargas de trabajo a Azure y necesita elegir los servicios de computación adecuados.",
+        "en": "Your company is planning to migrate its workloads to Azure and needs to choose the appropriate compute services."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "Un servicio que ejecuta contenedores sin necesidad de gestionar servidores es ___", "en": "A service that runs containers without the need to manage servers is ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Container Instances", "en": "Azure Container Instances" } },
+            { "id": "o2", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+            { "id": "o3", "text": { "es": "Azure Batch", "en": "Azure Batch" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Un servicio de orquestación de contenedores a gran escala es ___", "en": "A service for large-scale container orchestration is ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Container Instances", "en": "Azure Container Instances" } },
+            { "id": "o2", "text": { "es": "Azure Kubernetes Service", "en": "Azure Kubernetes Service" } },
+            { "id": "o3", "text": { "es": "Azure App Service", "en": "Azure App Service" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o1", "a2": "o2" },
+      "explanation": {
+        "es": "Azure Container Instances ejecuta contenedores sin gestionar servidores (serverless). Azure Kubernetes Service (AKS) orquesta contenedores a gran escala.",
+        "en": "Azure Container Instances runs containers without managing servers (serverless). Azure Kubernetes Service (AKS) orchestrates containers at scale."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-022",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona la respuesta correcta para cada afirmación sobre gobernanza en Azure.",
+        "en": "Select the correct answer for each statement about governance in Azure."
+      },
+      "context": {
+        "es": "Tu organización necesita implementar políticas de gobernanza para cumplir con los requisitos normativos.",
+        "en": "Your organization needs to implement governance policies to meet regulatory requirements."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "Para aplicar reglas y efectos sobre la configuración de los recursos, debes usar ___", "en": "To apply rules and effects to resource configuration, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Policy", "en": "Azure Policy" } },
+            { "id": "o2", "text": { "es": "Azure Blueprints", "en": "Azure Blueprints" } },
+            { "id": "o3", "text": { "es": "Management Groups", "en": "Management Groups" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Para organizar múltiples suscripciones en una jerarquía, debes usar ___", "en": "To organize multiple subscriptions into a hierarchy, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Policy", "en": "Azure Policy" } },
+            { "id": "o2", "text": { "es": "Resource Groups", "en": "Resource Groups" } },
+            { "id": "o3", "text": { "es": "Management Groups", "en": "Management Groups" } }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": { "es": "Para definir un conjunto repetible de recursos y políticas como un paquete, debes usar ___", "en": "To define a repeatable set of resources and policies as a package, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Blueprints", "en": "Azure Blueprints" } },
+            { "id": "o2", "text": { "es": "Azure Policy", "en": "Azure Policy" } },
+            { "id": "o3", "text": { "es": "ARM Templates", "en": "ARM Templates" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o1", "a2": "o3", "a3": "o1" },
+      "explanation": {
+        "es": "Azure Policy aplica reglas sobre recursos. Management Groups organizan suscripciones jerárquicamente. Azure Blueprints define paquetes repetibles de recursos y políticas.",
+        "en": "Azure Policy enforces rules on resources. Management Groups organize subscriptions hierarchically. Azure Blueprints defines repeatable packages of resources and policies."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/governance/policy/overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-023",
+      "type": "single",
+      "question": {
+        "es": "¿Cuál es el propósito principal de Azure Active Directory (Microsoft Entra ID)?",
+        "en": "What is the primary purpose of Azure Active Directory (Microsoft Entra ID)?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Servicio de identidad y acceso basado en la nube", "en": "Cloud-based identity and access management service" } },
+        { "id": "B", "text": { "es": "Servicio de almacenamiento de archivos", "en": "File storage service" } },
+        { "id": "C", "text": { "es": "Servicio de base de datos relacional", "en": "Relational database service" } },
+        { "id": "D", "text": { "es": "Servicio de red virtual", "en": "Virtual network service" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Microsoft Entra ID (antes Azure AD) es un servicio de identidad y acceso basado en la nube.",
+        "en": "Microsoft Entra ID (formerly Azure AD) is a cloud-based identity and access management service."
+      },
+      "references": ["https://learn.microsoft.com/en-us/entra/fundamentals/whatis"],
+      "topic": "Security",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-024",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es CapEx en el contexto de la computación en la nube?",
+        "en": "What is CapEx in the context of cloud computing?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Gasto operativo continuo por servicios consumidos", "en": "Ongoing operational expense for services consumed" } },
+        { "id": "B", "text": { "es": "Gasto inicial en infraestructura física", "en": "Upfront expense for physical infrastructure" } },
+        { "id": "C", "text": { "es": "Costo de licencias de software", "en": "Software licensing cost" } },
+        { "id": "D", "text": { "es": "Costo de formación del personal", "en": "Staff training cost" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "CapEx (gastos de capital) se refiere al gasto inicial en infraestructura física. OpEx es el gasto operativo continuo.",
+        "en": "CapEx (capital expenditure) refers to upfront spending on physical infrastructure. OpEx is ongoing operational spending."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/fiscal-outcomes"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-025",
+      "type": "single",
+      "question": {
+        "es": "¿Qué característica de la nube permite aumentar automáticamente los recursos según la demanda?",
+        "en": "Which cloud feature allows automatically increasing resources based on demand?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Agilidad", "en": "Agility" } },
+        { "id": "B", "text": { "es": "Elasticidad", "en": "Elasticity" } },
+        { "id": "C", "text": { "es": "Tolerancia a fallos", "en": "Fault tolerance" } },
+        { "id": "D", "text": { "es": "Recuperación ante desastres", "en": "Disaster recovery" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "La elasticidad es la capacidad de escalar recursos automáticamente según la demanda.",
+        "en": "Elasticity is the ability to automatically scale resources based on demand."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/architecture/framework/scalability/overview"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-026",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona recomendaciones personalizadas para mejorar el rendimiento, la seguridad y la fiabilidad?",
+        "en": "Which Azure service provides personalized recommendations to improve performance, security, and reliability?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Monitor", "en": "Azure Monitor" } },
+        { "id": "B", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } },
+        { "id": "C", "text": { "es": "Azure Service Health", "en": "Azure Service Health" } },
+        { "id": "D", "text": { "es": "Azure Log Analytics", "en": "Azure Log Analytics" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Advisor proporciona recomendaciones en 5 categorías: fiabilidad, seguridad, rendimiento, excelencia operativa y costos.",
+        "en": "Azure Advisor provides recommendations in 5 categories: reliability, security, performance, operational excellence, and cost."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/advisor/advisor-overview"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-027",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son formas válidas de reducir los costos en Azure? (Selecciona 2)",
+        "en": "Which are valid ways to reduce costs in Azure? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Usar Azure Reservations para compromisos a largo plazo", "en": "Use Azure Reservations for long-term commitments" } },
+        { "id": "B", "text": { "es": "Usar siempre las máquinas virtuales más grandes disponibles", "en": "Always use the largest available virtual machines" } },
+        { "id": "C", "text": { "es": "Usar Azure Spot VMs para cargas de trabajo tolerantes a interrupciones", "en": "Use Azure Spot VMs for interrupt-tolerant workloads" } },
+        { "id": "D", "text": { "es": "Implementar recursos en todas las regiones simultáneamente", "en": "Deploy resources in all regions simultaneously" } }
+      ],
+      "correctAnswers": ["A", "C"],
+      "explanation": {
+        "es": "Azure Reservations ofrecen descuentos por compromisos a 1 o 3 años. Las Spot VMs permiten usar capacidad sobrante a precio reducido.",
+        "en": "Azure Reservations offer discounts for 1 or 3-year commitments. Spot VMs allow using surplus capacity at reduced price."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations"],
+      "topic": "Pricing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-028",
+      "type": "single",
+      "question": {
+        "es": "¿Qué componente de Azure permite agrupar lógicamente los recursos que comparten el mismo ciclo de vida?",
+        "en": "Which Azure component allows logically grouping resources that share the same lifecycle?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Grupo de administración (Management Group)", "en": "Management Group" } },
+        { "id": "B", "text": { "es": "Suscripción (Subscription)", "en": "Subscription" } },
+        { "id": "C", "text": { "es": "Grupo de recursos (Resource Group)", "en": "Resource Group" } },
+        { "id": "D", "text": { "es": "Región (Region)", "en": "Region" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "Un Resource Group es un contenedor lógico para recursos de Azure que comparten el mismo ciclo de vida.",
+        "en": "A Resource Group is a logical container for Azure resources that share the same lifecycle."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal"],
+      "topic": "Azure Architecture",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-029",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure permite crear redes privadas virtuales en la nube?",
+        "en": "Which Azure service allows creating virtual private networks in the cloud?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Virtual Network (VNet)", "en": "Azure Virtual Network (VNet)" } },
+        { "id": "B", "text": { "es": "Azure ExpressRoute", "en": "Azure ExpressRoute" } },
+        { "id": "C", "text": { "es": "Azure Traffic Manager", "en": "Azure Traffic Manager" } },
+        { "id": "D", "text": { "es": "Azure DNS", "en": "Azure DNS" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Virtual Network (VNet) es el bloque de construcción fundamental para tu red privada en Azure.",
+        "en": "Azure Virtual Network (VNet) is the fundamental building block for your private network in Azure."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-030",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada afirmación sobre Azure Cost Management, indica si es verdadera o falsa.",
+        "en": "For each statement about Azure Cost Management, indicate whether it is true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Azure Cost Management puede crear presupuestos y alertas de gasto.", "en": "Azure Cost Management can create budgets and spending alerts." } },
+        { "id": "s2", "text": { "es": "Azure Cost Management solo está disponible con suscripciones Enterprise.", "en": "Azure Cost Management is only available with Enterprise subscriptions." } },
+        { "id": "s3", "text": { "es": "Azure Cost Management proporciona recomendaciones de optimización de costos.", "en": "Azure Cost Management provides cost optimization recommendations." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "no", "s3": "yes" },
+      "explanation": {
+        "es": "Cost Management permite crear presupuestos y alertas, y proporciona recomendaciones. Está disponible para todas las suscripciones.",
+        "en": "Cost Management allows creating budgets and alerts, and provides recommendations. It is available for all subscriptions."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management"],
+      "topic": "Pricing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-031",
+      "type": "single",
+      "question": {
+        "es": "¿Cuál de los siguientes servicios es una solución de CDN (Content Delivery Network) de Azure?",
+        "en": "Which of the following services is an Azure CDN (Content Delivery Network) solution?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Front Door", "en": "Azure Front Door" } },
+        { "id": "B", "text": { "es": "Azure Load Balancer", "en": "Azure Load Balancer" } },
+        { "id": "C", "text": { "es": "Azure VPN Gateway", "en": "Azure VPN Gateway" } },
+        { "id": "D", "text": { "es": "Azure Bastion", "en": "Azure Bastion" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Front Door es un punto de entrada global que combina CDN, equilibrio de carga y aceleración de aplicaciones.",
+        "en": "Azure Front Door is a global entry point that combines CDN, load balancing, and application acceleration."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-032",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es un Acuerdo de Nivel de Servicio (SLA) en Azure?",
+        "en": "What is a Service Level Agreement (SLA) in Azure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Un acuerdo que describe las expectativas de rendimiento y disponibilidad de un servicio", "en": "An agreement describing performance and availability expectations of a service" } },
+        { "id": "B", "text": { "es": "Un acuerdo de facturación mensual", "en": "A monthly billing agreement" } },
+        { "id": "C", "text": { "es": "Un acuerdo de seguridad de datos", "en": "A data security agreement" } },
+        { "id": "D", "text": { "es": "Un contrato de soporte técnico", "en": "A technical support contract" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Un SLA de Azure es un acuerdo formal que describe los compromisos de rendimiento y disponibilidad de Microsoft para cada servicio.",
+        "en": "An Azure SLA is a formal agreement describing Microsoft's performance and availability commitments for each service."
+      },
+      "references": ["https://azure.microsoft.com/en-us/support/legal/sla/summary/"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-033",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona la herramienta de Azure correcta para cada escenario de monitorización.",
+        "en": "Select the correct Azure tool for each monitoring scenario."
+      },
+      "context": {
+        "es": "Tu empresa necesita implementar una estrategia de monitorización completa para sus recursos en Azure.",
+        "en": "Your company needs to implement a comprehensive monitoring strategy for its Azure resources."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "Para recopilar y analizar métricas y logs de recursos de Azure, debes usar ___", "en": "To collect and analyze metrics and logs from Azure resources, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Monitor", "en": "Azure Monitor" } },
+            { "id": "o2", "text": { "es": "Azure Service Health", "en": "Azure Service Health" } },
+            { "id": "o3", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Para estar al tanto de interrupciones y mantenimiento planificado de servicios de Azure, debes usar ___", "en": "To stay informed about outages and planned maintenance of Azure services, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Monitor", "en": "Azure Monitor" } },
+            { "id": "o2", "text": { "es": "Azure Service Health", "en": "Azure Service Health" } },
+            { "id": "o3", "text": { "es": "Azure Activity Log", "en": "Azure Activity Log" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o1", "a2": "o2" },
+      "explanation": {
+        "es": "Azure Monitor recopila y analiza métricas y logs. Azure Service Health informa sobre interrupciones y mantenimiento planificado.",
+        "en": "Azure Monitor collects and analyzes metrics and logs. Azure Service Health informs about outages and planned maintenance."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-monitor/overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-034",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio permite una conexión privada y dedicada entre tu red local y Azure, sin pasar por Internet?",
+        "en": "Which service allows a private, dedicated connection between your on-premises network and Azure, without going over the Internet?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure VPN Gateway", "en": "Azure VPN Gateway" } },
+        { "id": "B", "text": { "es": "Azure ExpressRoute", "en": "Azure ExpressRoute" } },
+        { "id": "C", "text": { "es": "Azure Virtual Network", "en": "Azure Virtual Network" } },
+        { "id": "D", "text": { "es": "Azure Peering Service", "en": "Azure Peering Service" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure ExpressRoute proporciona una conexión privada y dedicada que no pasa por la Internet pública.",
+        "en": "Azure ExpressRoute provides a private, dedicated connection that does not go over the public Internet."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-035",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada afirmación sobre Microsoft Entra ID (Azure AD), indica si es verdadera o falsa.",
+        "en": "For each statement about Microsoft Entra ID (Azure AD), indicate whether it is true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Microsoft Entra ID soporta autenticación multifactor (MFA).", "en": "Microsoft Entra ID supports multi-factor authentication (MFA)." } },
+        { "id": "s2", "text": { "es": "Microsoft Entra ID es lo mismo que Active Directory Domain Services (AD DS) local.", "en": "Microsoft Entra ID is the same as on-premises Active Directory Domain Services (AD DS)." } },
+        { "id": "s3", "text": { "es": "Microsoft Entra ID puede usarse para el inicio de sesión único (SSO) en aplicaciones SaaS.", "en": "Microsoft Entra ID can be used for single sign-on (SSO) to SaaS applications." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "no", "s3": "yes" },
+      "explanation": {
+        "es": "Entra ID soporta MFA y SSO para aplicaciones SaaS. No es lo mismo que AD DS local.",
+        "en": "Entra ID supports MFA and SSO for SaaS apps. It's not the same as on-premises AD DS."
+      },
+      "references": ["https://learn.microsoft.com/en-us/entra/fundamentals/whatis"],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-036",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure permite ejecutar aplicaciones en contenedores sin gestionar la infraestructura subyacente?",
+        "en": "Which Azure service allows running containerized applications without managing the underlying infrastructure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+        { "id": "B", "text": { "es": "Azure Container Instances (ACI)", "en": "Azure Container Instances (ACI)" } },
+        { "id": "C", "text": { "es": "Azure Dedicated Host", "en": "Azure Dedicated Host" } },
+        { "id": "D", "text": { "es": "Azure VMware Solution", "en": "Azure VMware Solution" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Container Instances ofrece la forma más rápida y sencilla de ejecutar un contenedor en Azure sin gestionar la infraestructura.",
+        "en": "Azure Container Instances offers the fastest and simplest way to run a container in Azure without managing the infrastructure."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-037",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de las siguientes son ventajas de la nube pública? (Selecciona 2)",
+        "en": "Which of the following are advantages of the public cloud? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "No se necesita inversión inicial en hardware", "en": "No upfront hardware investment needed" } },
+        { "id": "B", "text": { "es": "Control total sobre la seguridad física", "en": "Full control over physical security" } },
+        { "id": "C", "text": { "es": "Escalado rápido y casi ilimitado", "en": "Fast and nearly unlimited scaling" } },
+        { "id": "D", "text": { "es": "Menor latencia que cualquier nube privada", "en": "Lower latency than any private cloud" } }
+      ],
+      "correctAnswers": ["A", "C"],
+      "explanation": {
+        "es": "La nube pública elimina la inversión en hardware y permite escalado rápido.",
+        "en": "Public cloud eliminates hardware investment and enables rapid scaling."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-038",
+      "type": "dropdown",
+      "question": {
+        "es": "Completa las siguientes afirmaciones sobre almacenamiento en Azure.",
+        "en": "Complete the following statements about Azure storage."
+      },
+      "context": {
+        "es": "Azure ofrece varios tipos de almacenamiento para diferentes necesidades.",
+        "en": "Azure offers several types of storage for different needs."
+      },
+      "dropdowns": [
+        {
+          "id": "dd1",
+          "label": { "es": "Para almacenar datos no estructurados como imágenes y vídeos, debes usar ___", "en": "To store unstructured data like images and videos, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Blob Storage", "en": "Azure Blob Storage" } },
+            { "id": "o2", "text": { "es": "Azure Table Storage", "en": "Azure Table Storage" } },
+            { "id": "o3", "text": { "es": "Azure SQL Database", "en": "Azure SQL Database" } }
+          ]
+        },
+        {
+          "id": "dd2",
+          "label": { "es": "Para datos a los que se accede con poca frecuencia y necesitan almacenamiento económico, debes usar la capa ___", "en": "For data that is infrequently accessed and needs economical storage, you should use the ___ tier" },
+          "options": [
+            { "id": "o1", "text": { "es": "Hot (frecuente)", "en": "Hot" } },
+            { "id": "o2", "text": { "es": "Cool (esporádico)", "en": "Cool" } },
+            { "id": "o3", "text": { "es": "Archive (archivo)", "en": "Archive" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "dd1": "o1", "dd2": "o2" },
+      "explanation": {
+        "es": "Blob Storage es ideal para datos no estructurados. La capa Cool es para datos accedidos con poca frecuencia (mínimo 30 días).",
+        "en": "Blob Storage is ideal for unstructured data. Cool tier is for infrequently accessed data (minimum 30 days)."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-039",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es el principio de privilegio mínimo (least privilege)?",
+        "en": "What is the principle of least privilege?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Otorgar a los usuarios y servicios solo el acceso mínimo necesario para realizar su trabajo", "en": "Granting users and services only the minimum access needed to do their job" } },
+        { "id": "B", "text": { "es": "Dar acceso de administrador a todos los usuarios", "en": "Giving administrator access to all users" } },
+        { "id": "C", "text": { "es": "Usar solo cuentas de servicio para acceder a recursos", "en": "Using only service accounts to access resources" } },
+        { "id": "D", "text": { "es": "Cifrar todos los datos en reposo y en tránsito", "en": "Encrypting all data at rest and in transit" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "El principio de privilegio mínimo establece que los usuarios solo deben tener el acceso mínimo necesario.",
+        "en": "The principle of least privilege states that users should only have the minimum access needed."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices"],
+      "topic": "Security",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-040",
+      "type": "dragdrop",
+      "question": {
+        "es": "Ordena la jerarquía de organización de Azure desde el nivel MÁS ALTO al MÁS BAJO.",
+        "en": "Order the Azure organizational hierarchy from the HIGHEST level to the LOWEST."
+      },
+      "options": [
+        { "id": "D1", "text": { "es": "Grupo de recursos (Resource Group)", "en": "Resource Group" } },
+        { "id": "D2", "text": { "es": "Grupo de administración (Management Group)", "en": "Management Group" } },
+        { "id": "D3", "text": { "es": "Recurso (Resource)", "en": "Resource" } },
+        { "id": "D4", "text": { "es": "Suscripción (Subscription)", "en": "Subscription" } }
+      ],
+      "correctAnswers": ["D2", "D4", "D1", "D3"],
+      "explanation": {
+        "es": "La jerarquía es: Management Group → Subscription → Resource Group → Resource.",
+        "en": "The hierarchy is: Management Group → Subscription → Resource Group → Resource."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources"],
+      "topic": "Azure Architecture",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-041",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es Azure Network Security Group (NSG)?",
+        "en": "What is Azure Network Security Group (NSG)?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Un firewall administrado en la nube", "en": "A managed cloud firewall" } },
+        { "id": "B", "text": { "es": "Un filtro de paquetes que permite controlar el tráfico de red entrante y saliente", "en": "A packet filter that allows controlling inbound and outbound network traffic" } },
+        { "id": "C", "text": { "es": "Un servicio de protección DDoS", "en": "A DDoS protection service" } },
+        { "id": "D", "text": { "es": "Un servicio de balanceo de carga", "en": "A load balancing service" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Un NSG contiene reglas de seguridad que permiten o deniegan el tráfico de red entrante o saliente.",
+        "en": "An NSG contains security rules that allow or deny inbound or outbound network traffic."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview"],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-042",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada afirmación sobre Azure Resource Manager (ARM) Templates, indica si es verdadera o falsa.",
+        "en": "For each statement about Azure Resource Manager (ARM) Templates, indicate whether it is true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Las ARM Templates permiten el despliegue declarativo de infraestructura.", "en": "ARM Templates allow declarative infrastructure deployment." } },
+        { "id": "s2", "text": { "es": "Las ARM Templates están escritas en formato YAML.", "en": "ARM Templates are written in YAML format." } },
+        { "id": "s3", "text": { "es": "Las ARM Templates soportan despliegue idempotente.", "en": "ARM Templates support idempotent deployment." } },
+        { "id": "s4", "text": { "es": "Bicep es un lenguaje alternativo a las ARM Templates JSON.", "en": "Bicep is an alternative language to JSON ARM Templates." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "no", "s3": "yes", "s4": "yes" },
+      "explanation": {
+        "es": "ARM Templates son declarativas e idempotentes, escritas en JSON (no YAML). Bicep es una alternativa con sintaxis más sencilla.",
+        "en": "ARM Templates are declarative and idempotent, written in JSON (not YAML). Bicep is an alternative with simpler syntax."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-043",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona una solución SIEM nativa en la nube?",
+        "en": "Which Azure service provides a cloud-native SIEM solution?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Microsoft Defender for Cloud", "en": "Microsoft Defender for Cloud" } },
+        { "id": "B", "text": { "es": "Microsoft Sentinel", "en": "Microsoft Sentinel" } },
+        { "id": "C", "text": { "es": "Azure Key Vault", "en": "Azure Key Vault" } },
+        { "id": "D", "text": { "es": "Azure Information Protection", "en": "Azure Information Protection" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Microsoft Sentinel es la solución SIEM y SOAR nativa en la nube de Microsoft.",
+        "en": "Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/sentinel/overview"],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-044",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada herramienta de Azure con su caso de uso principal.",
+        "en": "Match each Azure tool with its primary use case."
+      },
+      "leftLabel": { "es": "Herramienta", "en": "Tool" },
+      "rightLabel": { "es": "Caso de uso", "en": "Use case" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "Azure Cloud Shell", "en": "Azure Cloud Shell" } },
+        { "id": "L2", "text": { "es": "Azure Mobile App", "en": "Azure Mobile App" } },
+        { "id": "L3", "text": { "es": "Azure Arc", "en": "Azure Arc" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Gestionar recursos de Azure desde un dispositivo móvil", "en": "Manage Azure resources from a mobile device" } },
+        { "id": "R2", "text": { "es": "Terminal basada en navegador para ejecutar scripts CLI/PowerShell", "en": "Browser-based terminal for running CLI/PowerShell scripts" } },
+        { "id": "R3", "text": { "es": "Extender la gestión de Azure a recursos fuera de Azure", "en": "Extend Azure management to resources outside of Azure" } }
+      ],
+      "correctAnswers": { "L1": "R2", "L2": "R1", "L3": "R3" },
+      "explanation": {
+        "es": "Cloud Shell es un terminal en el navegador. Azure Mobile App gestiona desde el móvil. Azure Arc extiende Azure a entornos híbridos.",
+        "en": "Cloud Shell is a browser terminal. Azure Mobile App manages from mobile. Azure Arc extends Azure to hybrid environments."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cloud-shell/overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-045",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es la redundancia geográfica (geo-redundancy) en el contexto de Azure Storage?",
+        "en": "What is geo-redundancy in the context of Azure Storage?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Replicación de datos dentro de un único datacenter", "en": "Data replication within a single datacenter" } },
+        { "id": "B", "text": { "es": "Replicación de datos en dos regiones geográficamente separadas", "en": "Data replication across two geographically separated regions" } },
+        { "id": "C", "text": { "es": "Copia de seguridad manual de datos", "en": "Manual data backup" } },
+        { "id": "D", "text": { "es": "Cifrado de datos en reposo", "en": "Data encryption at rest" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "La redundancia geográfica (GRS) replica los datos en una región secundaria a cientos de kilómetros de la primaria.",
+        "en": "Geo-redundancy (GRS) replicates data to a secondary region hundreds of miles from the primary."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-046",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona el tipo de almacenamiento o capa correcta para cada escenario.",
+        "en": "Select the correct storage type or tier for each scenario."
+      },
+      "context": {
+        "es": "Debes seleccionar la configuración de almacenamiento más adecuada para cada requisito.",
+        "en": "You must select the most appropriate storage configuration for each requirement."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "Para almacenar datos que deben conservarse durante años para cumplir requisitos legales al menor costo, debes usar ___", "en": "To store data that must be kept for years to meet legal requirements at the lowest cost, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Capa Hot", "en": "Hot tier" } },
+            { "id": "o2", "text": { "es": "Capa Archive", "en": "Archive tier" } },
+            { "id": "o3", "text": { "es": "Capa Cool", "en": "Cool tier" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Para compartir archivos entre máquinas virtuales usando el protocolo SMB, debes usar ___", "en": "To share files between virtual machines using the SMB protocol, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Blob Storage", "en": "Azure Blob Storage" } },
+            { "id": "o2", "text": { "es": "Azure Files", "en": "Azure Files" } },
+            { "id": "o3", "text": { "es": "Azure Disk Storage", "en": "Azure Disk Storage" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o2", "a2": "o2" },
+      "explanation": {
+        "es": "La capa Archive ofrece el menor costo para datos a largo plazo. Azure Files permite compartir archivos mediante SMB.",
+        "en": "Archive tier offers the lowest cost for long-term data. Azure Files allows sharing files via SMB."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-047",
+      "type": "single",
+      "question": {
+        "es": "¿Qué modelo de precios de Azure permite comprometerse a usar recursos por 1 o 3 años a cambio de un descuento?",
+        "en": "Which Azure pricing model allows committing to use resources for 1 or 3 years in exchange for a discount?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Pago por uso", "en": "Pay-as-you-go" } },
+        { "id": "B", "text": { "es": "Azure Reservations", "en": "Azure Reservations" } },
+        { "id": "C", "text": { "es": "Azure Hybrid Benefit", "en": "Azure Hybrid Benefit" } },
+        { "id": "D", "text": { "es": "Azure Spot Pricing", "en": "Azure Spot Pricing" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Reservations ofrece descuentos significativos (hasta 72%) por compromisos de 1 o 3 años.",
+        "en": "Azure Reservations offers significant discounts (up to 72%) for 1 or 3-year commitments."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations"],
+      "topic": "Pricing",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-048",
+      "type": "dropdown",
+      "question": {
+        "es": "Completa las siguientes afirmaciones sobre las suscripciones de Azure.",
+        "en": "Complete the following statements about Azure subscriptions."
+      },
+      "context": {
+        "es": "Las suscripciones de Azure son fundamentales para organizar y facturar los recursos.",
+        "en": "Azure subscriptions are fundamental for organizing and billing resources."
+      },
+      "dropdowns": [
+        {
+          "id": "dd1",
+          "label": { "es": "El límite máximo de recursos de un tipo específico por suscripción se llama ___", "en": "The maximum limit of resources of a specific type per subscription is called ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Cuota (Quota)", "en": "Quota" } },
+            { "id": "o2", "text": { "es": "Presupuesto (Budget)", "en": "Budget" } },
+            { "id": "o3", "text": { "es": "Reservación (Reservation)", "en": "Reservation" } }
+          ]
+        },
+        {
+          "id": "dd2",
+          "label": { "es": "Para separar la facturación por departamentos, puedes usar múltiples ___", "en": "To separate billing by departments, you can use multiple ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Grupos de recursos", "en": "Resource Groups" } },
+            { "id": "o2", "text": { "es": "Suscripciones", "en": "Subscriptions" } },
+            { "id": "o3", "text": { "es": "Regiones", "en": "Regions" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "dd1": "o1", "dd2": "o2" },
+      "explanation": {
+        "es": "Las cuotas limitan la cantidad de recursos por tipo. Múltiples suscripciones permiten separar la facturación.",
+        "en": "Quotas limit resource amounts per type. Multiple subscriptions allow separating billing."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits"],
+      "topic": "Pricing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-049",
+      "type": "single",
+      "question": {
+        "es": "¿Cuál es la función principal de Azure RBAC (Role-Based Access Control)?",
+        "en": "What is the primary function of Azure RBAC (Role-Based Access Control)?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Cifrar datos en reposo", "en": "Encrypt data at rest" } },
+        { "id": "B", "text": { "es": "Gestionar quién tiene acceso a los recursos de Azure y qué puede hacer con ellos", "en": "Manage who has access to Azure resources and what they can do with them" } },
+        { "id": "C", "text": { "es": "Monitorizar el rendimiento de las aplicaciones", "en": "Monitor application performance" } },
+        { "id": "D", "text": { "es": "Crear redes virtuales", "en": "Create virtual networks" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure RBAC permite gestionar el acceso a los recursos de Azure.",
+        "en": "Azure RBAC allows managing access to Azure resources."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"],
+      "topic": "Security",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-050",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada afirmación sobre Azure Tags, indica si es verdadera o falsa.",
+        "en": "For each statement about Azure Tags, indicate whether it is true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Los tags permiten organizar recursos para la gestión de costos y facturación.", "en": "Tags allow organizing resources for cost management and billing." } },
+        { "id": "s2", "text": { "es": "Los tags se heredan automáticamente del grupo de recursos a los recursos individuales.", "en": "Tags are automatically inherited from the resource group to individual resources." } },
+        { "id": "s3", "text": { "es": "Un recurso puede tener un máximo de 50 pares nombre-valor de tags.", "en": "A resource can have a maximum of 50 name-value tag pairs." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "no", "s3": "yes" },
+      "explanation": {
+        "es": "Los tags ayudan a organizar y gestionar costos. No se heredan automáticamente. El límite es 50 tags por recurso.",
+        "en": "Tags help organize and manage costs. They're not automatically inherited. The limit is 50 tags per resource."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-051",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure permite crear y gestionar máquinas virtuales Windows y Linux?",
+        "en": "Which Azure service allows creating and managing Windows and Linux virtual machines?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure App Service", "en": "Azure App Service" } },
+        { "id": "B", "text": { "es": "Azure Virtual Machines", "en": "Azure Virtual Machines" } },
+        { "id": "C", "text": { "es": "Azure Functions", "en": "Azure Functions" } },
+        { "id": "D", "text": { "es": "Azure Logic Apps", "en": "Azure Logic Apps" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Virtual Machines proporciona IaaS con VMs Windows y Linux configurables a demanda.",
+        "en": "Azure Virtual Machines provides IaaS with on-demand configurable Windows and Linux VMs."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/virtual-machines/overview"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-052",
+      "type": "dragdrop",
+      "question": {
+        "es": "Ordena los siguientes pasos para crear un recurso en Azure usando ARM Templates, del PRIMERO al ÚLTIMO.",
+        "en": "Order the following steps to create a resource in Azure using ARM Templates, from FIRST to LAST."
+      },
+      "options": [
+        { "id": "D1", "text": { "es": "Azure Resource Manager valida la plantilla", "en": "Azure Resource Manager validates the template" } },
+        { "id": "D2", "text": { "es": "Crear o editar la plantilla ARM (JSON/Bicep)", "en": "Create or edit the ARM template (JSON/Bicep)" } },
+        { "id": "D3", "text": { "es": "Los recursos se despliegan en Azure", "en": "Resources are deployed to Azure" } },
+        { "id": "D4", "text": { "es": "Enviar la plantilla para despliegue (portal, CLI o PowerShell)", "en": "Submit the template for deployment (portal, CLI or PowerShell)" } }
+      ],
+      "correctAnswers": ["D2", "D4", "D1", "D3"],
+      "explanation": {
+        "es": "El flujo es: crear la plantilla → enviarla → ARM la valida → los recursos se despliegan.",
+        "en": "The flow is: create template → submit → ARM validates → resources are deployed."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"],
+      "topic": "Azure Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-053",
+      "type": "single",
+      "question": {
+        "es": "¿Qué herramienta de Azure te permite calcular los posibles ahorros al migrar de on-premises a Azure?",
+        "en": "Which Azure tool lets you calculate potential savings when migrating from on-premises to Azure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Pricing Calculator", "en": "Azure Pricing Calculator" } },
+        { "id": "B", "text": { "es": "Azure Total Cost of Ownership (TCO) Calculator", "en": "Azure Total Cost of Ownership (TCO) Calculator" } },
+        { "id": "C", "text": { "es": "Azure Cost Management", "en": "Azure Cost Management" } },
+        { "id": "D", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "La Calculadora TCO permite estimar los ahorros de costos al migrar de infraestructura local a Azure.",
+        "en": "The TCO Calculator lets you estimate cost savings when migrating from on-premises to Azure."
+      },
+      "references": ["https://azure.microsoft.com/en-us/pricing/tco/calculator/"],
+      "topic": "Pricing",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-054",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada servicio de Azure con su categoría correcta.",
+        "en": "Match each Azure service with its correct category."
+      },
+      "leftLabel": { "es": "Servicio", "en": "Service" },
+      "rightLabel": { "es": "Categoría", "en": "Category" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "Azure DevOps", "en": "Azure DevOps" } },
+        { "id": "L2", "text": { "es": "Azure IoT Hub", "en": "Azure IoT Hub" } },
+        { "id": "L3", "text": { "es": "Azure Cognitive Services", "en": "Azure Cognitive Services" } },
+        { "id": "L4", "text": { "es": "Azure DevTest Labs", "en": "Azure DevTest Labs" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Inteligencia Artificial y Machine Learning", "en": "AI and Machine Learning" } },
+        { "id": "R2", "text": { "es": "Internet de las Cosas (IoT)", "en": "Internet of Things (IoT)" } },
+        { "id": "R3", "text": { "es": "DevOps y herramientas de desarrollo", "en": "DevOps and development tools" } },
+        { "id": "R4", "text": { "es": "Entornos de desarrollo y pruebas rápidos", "en": "Rapid development and testing environments" } }
+      ],
+      "correctAnswers": { "L1": "R3", "L2": "R2", "L3": "R1", "L4": "R4" },
+      "explanation": {
+        "es": "Azure DevOps es DevOps. IoT Hub es IoT. Cognitive Services es IA/ML. DevTest Labs crea entornos de prueba rápidos.",
+        "en": "Azure DevOps is DevOps. IoT Hub is IoT. Cognitive Services is AI/ML. DevTest Labs creates rapid test environments."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-055",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de escalado aumenta la capacidad de una máquina virtual existente (más CPU, memoria)?",
+        "en": "What type of scaling increases the capacity of an existing virtual machine (more CPU, memory)?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Escalado horizontal (scale out)", "en": "Horizontal scaling (scale out)" } },
+        { "id": "B", "text": { "es": "Escalado vertical (scale up)", "en": "Vertical scaling (scale up)" } },
+        { "id": "C", "text": { "es": "Escalado automático (autoscale)", "en": "Autoscaling" } },
+        { "id": "D", "text": { "es": "Balanceo de carga", "en": "Load balancing" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El escalado vertical (scale up) aumenta las capacidades de una VM existente. El horizontal (scale out) agrega más instancias.",
+        "en": "Vertical scaling (scale up) increases capabilities of an existing VM. Horizontal (scale out) adds more instances."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/architecture/guide/design-principles/scale-out"],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-056",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona el servicio de identidad correcto para cada escenario.",
+        "en": "Select the correct identity service for each scenario."
+      },
+      "context": {
+        "es": "Tu organización necesita implementar diferentes soluciones de identidad y acceso.",
+        "en": "Your organization needs to implement different identity and access solutions."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "Para habilitar que usuarios externos (clientes) se registren e inicien sesión en tu aplicación, debes usar ___", "en": "To enable external users (customers) to sign up and sign in to your application, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Microsoft Entra ID (Azure AD)", "en": "Microsoft Entra ID (Azure AD)" } },
+            { "id": "o2", "text": { "es": "Microsoft Entra External ID (Azure AD B2C)", "en": "Microsoft Entra External ID (Azure AD B2C)" } },
+            { "id": "o3", "text": { "es": "Active Directory Domain Services", "en": "Active Directory Domain Services" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Para requerir MFA solo cuando un usuario inicia sesión desde una ubicación no reconocida, debes usar ___", "en": "To require MFA only when a user signs in from an unrecognized location, you should use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Policy", "en": "Azure Policy" } },
+            { "id": "o2", "text": { "es": "Acceso condicional (Conditional Access)", "en": "Conditional Access" } },
+            { "id": "o3", "text": { "es": "Azure RBAC", "en": "Azure RBAC" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o2", "a2": "o2" },
+      "explanation": {
+        "es": "Entra External ID (B2C) permite autenticación de clientes externos. El acceso condicional aplica MFA basado en condiciones.",
+        "en": "Entra External ID (B2C) enables external customer authentication. Conditional Access applies MFA based on conditions."
+      },
+      "references": ["https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"],
+      "topic": "Security",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az900-057",
+      "type": "single",
+      "question": {
+        "es": "¿Qué garantiza un SLA del 99.99% en Azure?",
+        "en": "What does a 99.99% SLA guarantee in Azure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Máximo 52.56 minutos de inactividad al año", "en": "Maximum 52.56 minutes of downtime per year" } },
+        { "id": "B", "text": { "es": "Máximo 8.76 horas de inactividad al año", "en": "Maximum 8.76 hours of downtime per year" } },
+        { "id": "C", "text": { "es": "Máximo 5.26 minutos de inactividad al año", "en": "Maximum 5.26 minutes of downtime per year" } },
+        { "id": "D", "text": { "es": "Cero tiempo de inactividad", "en": "Zero downtime" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Un SLA del 99.99% permite ~52.56 minutos de inactividad por año.",
+        "en": "A 99.99% SLA allows ~52.56 minutes of downtime per year."
+      },
+      "references": ["https://azure.microsoft.com/en-us/support/legal/sla/summary/"],
+      "topic": "Cloud Concepts",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az900-058",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona un servicio DNS administrado?",
+        "en": "Which Azure service provides a managed DNS service?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Traffic Manager", "en": "Azure Traffic Manager" } },
+        { "id": "B", "text": { "es": "Azure DNS", "en": "Azure DNS" } },
+        { "id": "C", "text": { "es": "Azure CDN", "en": "Azure CDN" } },
+        { "id": "D", "text": { "es": "Azure Application Gateway", "en": "Azure Application Gateway" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure DNS es un servicio de hospedaje de dominios DNS usando la infraestructura de Microsoft Azure.",
+        "en": "Azure DNS is a DNS domain hosting service using Microsoft Azure infrastructure."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/dns/dns-overview"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-059",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de los siguientes son planes de soporte de Azure que incluyen soporte técnico 24/7? (Selecciona 2)",
+        "en": "Which of the following Azure support plans include 24/7 technical support? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Basic", "en": "Basic" } },
+        { "id": "B", "text": { "es": "Developer", "en": "Developer" } },
+        { "id": "C", "text": { "es": "Standard", "en": "Standard" } },
+        { "id": "D", "text": { "es": "Professional Direct", "en": "Professional Direct" } }
+      ],
+      "correctAnswers": ["C", "D"],
+      "explanation": {
+        "es": "Standard y Professional Direct incluyen soporte técnico 24/7. Basic no incluye soporte técnico y Developer tiene soporte limitado.",
+        "en": "Standard and Professional Direct include 24/7 technical support. Basic has no technical support and Developer has limited support."
+      },
+      "references": ["https://azure.microsoft.com/en-us/support/plans/"],
+      "topic": "Pricing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-060",
+      "type": "dropdown",
+      "question": {
+        "es": "Completa las siguientes afirmaciones sobre conceptos de red en Azure.",
+        "en": "Complete the following statements about networking concepts in Azure."
+      },
+      "context": {
+        "es": "Las redes en Azure son fundamentales para conectar recursos de forma segura.",
+        "en": "Networking in Azure is fundamental for securely connecting resources."
+      },
+      "dropdowns": [
+        {
+          "id": "dd1",
+          "label": { "es": "Para conectar dos redes virtuales en Azure entre sí, puedes usar ___", "en": "To connect two Azure virtual networks to each other, you can use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "VNet Peering", "en": "VNet Peering" } },
+            { "id": "o2", "text": { "es": "Azure DNS", "en": "Azure DNS" } },
+            { "id": "o3", "text": { "es": "Azure CDN", "en": "Azure CDN" } }
+          ]
+        },
+        {
+          "id": "dd2",
+          "label": { "es": "Para equilibrar el tráfico entre múltiples VMs dentro de una misma región, puedes usar ___", "en": "To balance traffic between multiple VMs within the same region, you can use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Load Balancer", "en": "Azure Load Balancer" } },
+            { "id": "o2", "text": { "es": "Azure Traffic Manager", "en": "Azure Traffic Manager" } },
+            { "id": "o3", "text": { "es": "Azure VPN Gateway", "en": "Azure VPN Gateway" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "dd1": "o1", "dd2": "o1" },
+      "explanation": {
+        "es": "VNet Peering conecta dos VNets. Azure Load Balancer distribuye tráfico entre VMs en la misma región.",
+        "en": "VNet Peering connects two VNets. Azure Load Balancer distributes traffic among VMs in the same region."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview"],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-061",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona una plataforma de análisis de big data basada en Apache Spark?",
+        "en": "Which Azure service provides a big data analytics platform based on Apache Spark?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Synapse Analytics", "en": "Azure Synapse Analytics" } },
+        { "id": "B", "text": { "es": "Azure Data Factory", "en": "Azure Data Factory" } },
+        { "id": "C", "text": { "es": "Azure Stream Analytics", "en": "Azure Stream Analytics" } },
+        { "id": "D", "text": { "es": "Azure Event Hubs", "en": "Azure Event Hubs" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Synapse Analytics integra big data y almacenamiento de datos, incluyendo Apache Spark.",
+        "en": "Azure Synapse Analytics integrates big data and data warehousing, including Apache Spark."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"],
+      "topic": "Azure Services",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az900-062",
+      "type": "match",
+      "question": {
+        "es": "Asocia cada tipo de redundancia de Azure Storage con su descripción.",
+        "en": "Match each Azure Storage redundancy type with its description."
+      },
+      "leftLabel": { "es": "Tipo de redundancia", "en": "Redundancy type" },
+      "rightLabel": { "es": "Descripción", "en": "Description" },
+      "leftItems": [
+        { "id": "L1", "text": { "es": "LRS", "en": "LRS" } },
+        { "id": "L2", "text": { "es": "ZRS", "en": "ZRS" } },
+        { "id": "L3", "text": { "es": "GRS", "en": "GRS" } }
+      ],
+      "rightItems": [
+        { "id": "R1", "text": { "es": "Replica datos en 3 zonas de disponibilidad dentro de una región", "en": "Replicates data across 3 availability zones within a region" } },
+        { "id": "R2", "text": { "es": "Replica datos 3 veces dentro de un único datacenter", "en": "Replicates data 3 times within a single datacenter" } },
+        { "id": "R3", "text": { "es": "Replica datos en una región primaria y una secundaria", "en": "Replicates data in a primary and a secondary region" } }
+      ],
+      "correctAnswers": { "L1": "R2", "L2": "R1", "L3": "R3" },
+      "explanation": {
+        "es": "LRS replica 3 veces en un datacenter. ZRS replica en 3 zonas. GRS replica en dos regiones.",
+        "en": "LRS replicates 3 times in one datacenter. ZRS replicates across 3 zones. GRS replicates in two regions."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy"],
+      "topic": "Azure Services",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az900-063",
+      "type": "yesno",
+      "question": {
+        "es": "Para cada afirmación sobre Azure Compliance, indica si es verdadera o falsa.",
+        "en": "For each statement about Azure Compliance, indicate whether it is true or false."
+      },
+      "statements": [
+        { "id": "s1", "text": { "es": "Microsoft Trust Center proporciona información sobre las prácticas de seguridad, privacidad y cumplimiento de Microsoft.", "en": "Microsoft Trust Center provides information about Microsoft's security, privacy, and compliance practices." } },
+        { "id": "s2", "text": { "es": "Azure cumple con más de 90 estándares de cumplimiento internacionales.", "en": "Azure complies with more than 90 international compliance standards." } },
+        { "id": "s3", "text": { "es": "El cumplimiento normativo en Azure es responsabilidad exclusiva de Microsoft.", "en": "Regulatory compliance in Azure is solely Microsoft's responsibility." } }
+      ],
+      "correctAnswers": { "s1": "yes", "s2": "yes", "s3": "no" },
+      "explanation": {
+        "es": "Trust Center da info de compliance. Azure cumple 90+ estándares. El cumplimiento es responsabilidad compartida.",
+        "en": "Trust Center provides compliance info. Azure meets 90+ standards. Compliance is a shared responsibility."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/compliance/"],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-064",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure permite implementar y administrar soluciones de IoT a escala?",
+        "en": "Which Azure service allows deploying and managing IoT solutions at scale?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Event Hubs", "en": "Azure Event Hubs" } },
+        { "id": "B", "text": { "es": "Azure IoT Hub", "en": "Azure IoT Hub" } },
+        { "id": "C", "text": { "es": "Azure Service Bus", "en": "Azure Service Bus" } },
+        { "id": "D", "text": { "es": "Azure Notification Hubs", "en": "Azure Notification Hubs" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure IoT Hub es un servicio administrado para comunicación bidireccional con dispositivos IoT.",
+        "en": "Azure IoT Hub is a managed service for bidirectional communication with IoT devices."
+      },
+      "references": ["https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub"],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-065",
+      "type": "hotarea",
+      "question": {
+        "es": "Selecciona la opción correcta para completar cada afirmación sobre facturación y costos en Azure.",
+        "en": "Select the correct option to complete each statement about billing and costs in Azure."
+      },
+      "context": {
+        "es": "Comprender el modelo de facturación de Azure es esencial para optimizar los costos.",
+        "en": "Understanding Azure's billing model is essential for optimizing costs."
+      },
+      "areas": [
+        {
+          "id": "a1",
+          "label": { "es": "El tráfico de red ENTRANTE (ingress) a Azure generalmente es ___", "en": "INBOUND (ingress) network traffic to Azure is generally ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Gratuito", "en": "Free" } },
+            { "id": "o2", "text": { "es": "De pago según volumen", "en": "Charged based on volume" } },
+            { "id": "o3", "text": { "es": "De pago con tarifa fija", "en": "Charged at a flat rate" } }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": { "es": "Para reutilizar licencias de Windows Server existentes en Azure, puedes usar ___", "en": "To reuse existing Windows Server licenses in Azure, you can use ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Azure Reservations", "en": "Azure Reservations" } },
+            { "id": "o2", "text": { "es": "Azure Hybrid Benefit", "en": "Azure Hybrid Benefit" } },
+            { "id": "o3", "text": { "es": "Azure Spot VMs", "en": "Azure Spot VMs" } }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": { "es": "Los costos de los recursos de Azure pueden variar entre ___", "en": "Azure resource costs can vary between ___" },
+          "options": [
+            { "id": "o1", "text": { "es": "Regiones", "en": "Regions" } },
+            { "id": "o2", "text": { "es": "Grupos de recursos", "en": "Resource groups" } },
+            { "id": "o3", "text": { "es": "Suscripciones del mismo tipo", "en": "Subscriptions of the same type" } }
+          ]
+        }
+      ],
+      "correctAnswers": { "a1": "o1", "a2": "o2", "a3": "o1" },
+      "explanation": {
+        "es": "El tráfico entrante es generalmente gratuito. Azure Hybrid Benefit reutiliza licencias. Los precios varían entre regiones.",
+        "en": "Inbound traffic is generally free. Azure Hybrid Benefit reuses licenses. Prices vary between regions."
+      },
+      "references": ["https://azure.microsoft.com/en-us/pricing/details/bandwidth/"],
+      "topic": "Pricing",
+      "difficulty": "medium"
     }
   ]
 }

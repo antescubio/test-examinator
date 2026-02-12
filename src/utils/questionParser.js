@@ -106,7 +106,7 @@ export function getExamQuestions(certificationId, config) {
  * @throws {Error} If question format is invalid
  */
 export function validateQuestion(question) {
-  const required = ['id', 'type', 'question', 'options', 'correctAnswers', 'explanation', 'topic', 'difficulty'];
+  const required = ['id', 'type', 'question', 'correctAnswers', 'explanation', 'topic', 'difficulty'];
   
   for (const field of required) {
     if (!question[field]) {
@@ -114,16 +114,40 @@ export function validateQuestion(question) {
     }
   }
 
-  if (!['single', 'multiple'].includes(question.type)) {
-    throw new Error(`Question ${question.id} has invalid type: ${question.type}`);
+  const validTypes = ['single', 'multiple', 'yesno', 'dragdrop', 'dropdown', 'match', 'hotarea'];
+  if (!validTypes.includes(question.type)) {
+    throw new Error(`Question ${question.id} has invalid type: ${question.type}. Valid types: ${validTypes.join(', ')}`);
   }
 
-  if (!Array.isArray(question.options) || question.options.length === 0) {
-    throw new Error(`Question ${question.id} must have at least one option`);
+  // Type-specific validation
+  if (['single', 'multiple', 'dragdrop'].includes(question.type)) {
+    if (!Array.isArray(question.options) || question.options.length === 0) {
+      throw new Error(`Question ${question.id} must have at least one option`);
+    }
   }
 
-  if (!Array.isArray(question.correctAnswers) || question.correctAnswers.length === 0) {
-    throw new Error(`Question ${question.id} must have at least one correct answer`);
+  if (question.type === 'yesno') {
+    if (!Array.isArray(question.statements) || question.statements.length === 0) {
+      throw new Error(`Question ${question.id} (yesno) must have statements`);
+    }
+  }
+
+  if (question.type === 'dropdown') {
+    if (!Array.isArray(question.dropdowns) || question.dropdowns.length === 0) {
+      throw new Error(`Question ${question.id} (dropdown) must have dropdowns`);
+    }
+  }
+
+  if (question.type === 'match') {
+    if (!Array.isArray(question.leftItems) || !Array.isArray(question.rightItems)) {
+      throw new Error(`Question ${question.id} (match) must have leftItems and rightItems`);
+    }
+  }
+
+  if (question.type === 'hotarea') {
+    if (!Array.isArray(question.areas) || question.areas.length === 0) {
+      throw new Error(`Question ${question.id} (hotarea) must have areas`);
+    }
   }
 
   return true;

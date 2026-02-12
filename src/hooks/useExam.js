@@ -41,6 +41,24 @@ export function useExam() {
   const selectAnswer = (answer) => {
     const currentQuestion = state.questions[state.currentQuestionIndex]
     
+    // Object-based answers (yesno, dropdown, match, hotarea)
+    if (typeof answer === 'object' && !Array.isArray(answer)) {
+      dispatch({
+        type: 'SELECT_ANSWER',
+        payload: { answer }
+      })
+      return
+    }
+    
+    // Array-based answers (dragdrop passes array directly)
+    if (Array.isArray(answer)) {
+      dispatch({
+        type: 'SELECT_ANSWER',
+        payload: { answer }
+      })
+      return
+    }
+    
     if (currentQuestion.type === 'single') {
       // Single choice: replace answer
       dispatch({
@@ -90,17 +108,30 @@ export function useExam() {
   }
 
   const getCurrentAnswer = () => {
-    return state.answers[state.currentQuestionIndex] || []
+    const answer = state.answers[state.currentQuestionIndex]
+    if (answer === undefined || answer === null) {
+      // Return appropriate default based on question type
+      const q = state.questions[state.currentQuestionIndex]
+      if (q && ['yesno', 'dropdown', 'match', 'hotarea'].includes(q.type)) {
+        return {}
+      }
+      return []
+    }
+    return answer
   }
 
   const isQuestionAnswered = (index) => {
-    return state.answers[index] && state.answers[index].length > 0
+    const answer = state.answers[index]
+    if (!answer) return false
+    if (Array.isArray(answer)) return answer.length > 0
+    if (typeof answer === 'object') return Object.keys(answer).length > 0
+    return false
   }
 
   const getProgress = () => {
     const total = state.questions.length
     const answered = Object.keys(state.answers).filter(key => 
-      state.answers[key] && state.answers[key].length > 0
+      isQuestionAnswered(parseInt(key))
     ).length
     return { answered, total }
   }

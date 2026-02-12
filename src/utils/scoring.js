@@ -1,17 +1,56 @@
+function checkAnswer(question, userAnswer) {
+  const type = question.type
+  const correctAnswers = question.correctAnswers
+
+  if (type === 'single' || type === 'multiple') {
+    const ua = Array.isArray(userAnswer) ? userAnswer : []
+    const ca = Array.isArray(correctAnswers) ? correctAnswers : []
+    return ua.length === ca.length &&
+      ua.every(a => ca.includes(a)) &&
+      ca.every(a => ua.includes(a))
+  }
+
+  if (type === 'yesno') {
+    // correctAnswers is an object like { "s1": "yes", "s2": "no" }
+    if (typeof correctAnswers !== 'object' || typeof userAnswer !== 'object') return false
+    return Object.keys(correctAnswers).every(key => userAnswer[key] === correctAnswers[key])
+  }
+
+  if (type === 'dropdown') {
+    if (typeof correctAnswers !== 'object' || typeof userAnswer !== 'object') return false
+    return Object.keys(correctAnswers).every(key => userAnswer[key] === correctAnswers[key])
+  }
+
+  if (type === 'match') {
+    if (typeof correctAnswers !== 'object' || typeof userAnswer !== 'object') return false
+    return Object.keys(correctAnswers).every(key => userAnswer[key] === correctAnswers[key])
+  }
+
+  if (type === 'hotarea') {
+    if (typeof correctAnswers !== 'object' || typeof userAnswer !== 'object') return false
+    return Object.keys(correctAnswers).every(key => userAnswer[key] === correctAnswers[key])
+  }
+
+  if (type === 'dragdrop') {
+    const ua = Array.isArray(userAnswer) ? userAnswer : []
+    const ca = Array.isArray(correctAnswers) ? correctAnswers : []
+    return ua.length === ca.length && ua.every((a, i) => a === ca[i])
+  }
+
+  return false
+}
+
 export function calculateScore(questions, answers, certification) {
   let correctCount = 0
   const topicScores = {}
   const questionResults = []
 
   questions.forEach((question, index) => {
-    const userAnswer = answers[index] || []
-    const correctAnswers = question.correctAnswers || []
+    const userAnswer = answers[index] || ((['yesno', 'dropdown', 'match', 'hotarea'].includes(question.type)) ? {} : [])
+    const correctAnswers = question.correctAnswers
     
     // Check if answer is correct
-    const isCorrect = 
-      userAnswer.length === correctAnswers.length &&
-      userAnswer.every(a => correctAnswers.includes(a)) &&
-      correctAnswers.every(a => userAnswer.includes(a))
+    const isCorrect = checkAnswer(question, userAnswer)
     
     if (isCorrect) {
       correctCount++

@@ -13,7 +13,7 @@
     "passingScore": 700,
     "maxScore": 1000,
     "questionsPerExam": 40,
-    "totalQuestionsInBank": 10,
+    "totalQuestionsInBank": 65,
     "topics": ["Cloud Concepts", "Azure Architecture", "Azure Services", "Security", "Pricing"]
   },
   {
