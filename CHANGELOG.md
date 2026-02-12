@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Home page** with certification selection
+  - Responsive grid layout (1 col mobile, 2 tablet, 3 desktop)
+  - Certification cards grouped by provider (Microsoft and MuleSoft)
+  - Each card displays: name, duration, passing score, available questions, topics preview
+  - Color-coded cards based on certification theme
+  - Direct navigation to exam configuration
+- **Exam configuration page** (`ExamConfig.jsx`)
+  - Number of questions selector (10, 20, 30, or all available)
+  - Time limit options (no limit, 30min, 60min, 90min, or real exam time)
+  - Topic selection with multi-select checkboxes
+  - Shuffle options for questions and answer choices
+  - Configuration persistence in localStorage
+  - Validation (at least one topic must be selected)
+  - Responsive design with certification color theming
 - Question banks with 60+ realistic questions (10 per certification)
   - Azure certifications: AZ-900, AZ-104, AZ-204, AZ-305
   - MuleSoft certifications: MCD-Level-1, MCIA

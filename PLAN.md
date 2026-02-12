@@ -138,7 +138,7 @@ Cada fase es independiente y debe ejecutarse en orden. Cada una produce un commi
 
 ---
 
-### FASE 2: Modelo de datos y banco de preguntas
+### FASE 2: Modelo de datos y banco de preguntas ✅
 
 **Objetivo:** Definir el formato JSON de las preguntas y crear un set de ejemplo para cada certificación.
 
@@ -263,7 +263,7 @@ Cada fase es independiente y debe ejecutarse en orden. Cada una produce un commi
 
 ---
 
-### FASE 3: Pantalla principal - Selección de certificación
+### FASE 3: Pantalla principal - Selección de certificación ✅
 
 **Objetivo:** Página Home con las certificaciones disponibles en formato grid de tarjetas.
 
