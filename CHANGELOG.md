@@ -8,6 +8,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Exam Engine (Phase 4)** - Core functionality for simulated exams
+  - `ExamContext` with React Context + useReducer for global exam state management
+  - `useExam` hook for exam logic (start, answer selection, navigation, finish)
+  - `useTimer` hook with countdown timer and auto-finish on timeout
+  - Exam components:
+    - `QuestionCard`: Displays question with type indicator, topic, difficulty, and options
+    - `OptionButton`: Interactive answer buttons with selection states
+    - `Timer`: Countdown display with visual warnings at 5min and 1min remaining
+    - `ProgressBar`: Shows current question, total, and answered count with visual progress
+    - `ExamNavigation`: Previous/Next buttons, question grid navigator, finish button with confirmation
+  - `ExamPage`: Fully functional exam interface integrating all components
+  - `scoring.js`: Score calculation on Microsoft scale (0-1000), topic performance analysis
+  - Features:
+    - Question navigation (previous, next, jump to any question)
+    - Answer selection for single and multiple choice questions
+    - Visual feedback for answered/unanswered questions
+    - Timer with color-coded warnings
+    - Confirmation modal before finishing
+    - Auto-save exam state to localStorage
+    - Auto-finish when time expires
+    - Score calculation and results storage
 - **Home page** with certification selection
   - Responsive grid layout (1 col mobile, 2 tablet, 3 desktop)
   - Certification cards grouped by provider (Microsoft and MuleSoft)
@@ -33,7 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Questions include explanations, references, topics, and difficulty levels
 
 ### Changed
-- None
+- Wrapped App with `ExamProvider` to enable global exam state across all pages
 
 ## [0.1.0] - 2026-02-12
 

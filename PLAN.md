@@ -288,7 +288,7 @@ Cada fase es independiente y debe ejecutarse en orden. Cada una produce un commi
 
 ---
 
-### FASE 4: Motor de examen simulado
+### FASE 4: Motor de examen simulado ✅
 
 **Objetivo:** Core de la aplicación. Examen funcional con temporizador y navegación entre preguntas.
 
