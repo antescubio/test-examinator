@@ -1,0 +1,247 @@
+{
+  "certification": "MCD-Level-1",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "mcd1-001",
+      "type": "single",
+      "question": {
+        "es": "¿Cuál es el propósito principal de Anypoint Studio?",
+        "en": "What is the main purpose of Anypoint Studio?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Desarrollar y probar aplicaciones Mule", "en": "Develop and test Mule applications" } },
+        { "id": "B", "text": { "es": "Monitorear aplicaciones en producción", "en": "Monitor applications in production" } },
+        { "id": "C", "text": { "es": "Gestionar APIs publicadas", "en": "Manage published APIs" } },
+        { "id": "D", "text": { "es": "Administrar usuarios y permisos", "en": "Manage users and permissions" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Anypoint Studio es el IDE basado en Eclipse para desarrollar, probar y depurar aplicaciones Mule localmente antes de desplegarlas.",
+        "en": "Anypoint Studio is the Eclipse-based IDE for developing, testing, and debugging Mule applications locally before deployment."
+      },
+      "references": [
+        "https://docs.mulesoft.com/studio/"
+      ],
+      "topic": "Anypoint Platform",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-002",
+      "type": "single",
+      "question": {
+        "es": "En DataWeave, ¿qué operador se utiliza para mapear elementos de un array?",
+        "en": "In DataWeave, which operator is used to map elements of an array?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "filter", "en": "filter" } },
+        { "id": "B", "text": { "es": "map", "en": "map" } },
+        { "id": "C", "text": { "es": "reduce", "en": "reduce" } },
+        { "id": "D", "text": { "es": "groupBy", "en": "groupBy" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El operador 'map' en DataWeave se utiliza para transformar cada elemento de un array aplicando una expresión a cada uno.",
+        "en": "The 'map' operator in DataWeave is used to transform each element of an array by applying an expression to each one."
+      },
+      "references": [
+        "https://docs.mulesoft.com/dataweave/latest/dw-core-functions-map"
+      ],
+      "topic": "DataWeave",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-003",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son componentes válidos de Mule 4? (Selecciona 2)",
+        "en": "Which are valid Mule 4 components? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Flow", "en": "Flow" } },
+        { "id": "B", "text": { "es": "Connector", "en": "Connector" } },
+        { "id": "C", "text": { "es": "Servlet", "en": "Servlet" } },
+        { "id": "D", "text": { "es": "Handler", "en": "Handler" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "Flow y Connector son componentes fundamentales de Mule 4. Los Flows definen la lógica de procesamiento y los Connectors permiten la integración con sistemas externos.",
+        "en": "Flow and Connector are fundamental components of Mule 4. Flows define the processing logic and Connectors enable integration with external systems."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/about-flows"
+      ],
+      "topic": "Flow Design",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué scope en Mule se utiliza para agrupar operaciones que deben ejecutarse de manera transaccional?",
+        "en": "Which scope in Mule is used to group operations that must execute transactionally?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Async", "en": "Async" } },
+        { "id": "B", "text": { "es": "Try", "en": "Try" } },
+        { "id": "C", "text": { "es": "Flow Reference", "en": "Flow Reference" } },
+        { "id": "D", "text": { "es": "Transaction", "en": "Transaction" } }
+      ],
+      "correctAnswers": ["D"],
+      "explanation": {
+        "es": "El scope Transaction permite ejecutar un grupo de operaciones dentro de una transacción, garantizando que todas se completen o ninguna lo haga.",
+        "en": "The Transaction scope allows executing a group of operations within a transaction, ensuring all complete or none do."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/transaction-management"
+      ],
+      "topic": "Flow Design",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcd1-005",
+      "type": "single",
+      "question": {
+        "es": "¿Qué componente se utiliza para manejar errores en un flow de Mule?",
+        "en": "Which component is used to handle errors in a Mule flow?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Exception Strategy", "en": "Exception Strategy" } },
+        { "id": "B", "text": { "es": "Error Handler", "en": "Error Handler" } },
+        { "id": "C", "text": { "es": "Catch Block", "en": "Catch Block" } },
+        { "id": "D", "text": { "es": "Fault Handler", "en": "Fault Handler" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "En Mule 4, el Error Handler reemplaza las Exception Strategies de Mule 3 y se utiliza para manejar errores en los flows.",
+        "en": "In Mule 4, the Error Handler replaces Mule 3's Exception Strategies and is used to handle errors in flows."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/error-handling"
+      ],
+      "topic": "Error Handling",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-006",
+      "type": "single",
+      "question": {
+        "es": "¿Qué formato utiliza RAML para definir APIs?",
+        "en": "What format does RAML use to define APIs?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "JSON", "en": "JSON" } },
+        { "id": "B", "text": { "es": "XML", "en": "XML" } },
+        { "id": "C", "text": { "es": "YAML", "en": "YAML" } },
+        { "id": "D", "text": { "es": "CSV", "en": "CSV" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "RAML (RESTful API Modeling Language) utiliza YAML como formato base para definir APIs de manera legible y estructurada.",
+        "en": "RAML (RESTful API Modeling Language) uses YAML as the base format to define APIs in a readable and structured way."
+      },
+      "references": [
+        "https://docs.mulesoft.com/design-center/raml-1-0-intro"
+      ],
+      "topic": "API Design",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-007",
+      "type": "multiple",
+      "question": {
+        "es": "¿Qué tipos de error existen en Mule 4? (Selecciona 2)",
+        "en": "What types of errors exist in Mule 4? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "CONNECTIVITY", "en": "CONNECTIVITY" } },
+        { "id": "B", "text": { "es": "VALIDATION", "en": "VALIDATION" } },
+        { "id": "C", "text": { "es": "COMPILATION", "en": "COMPILATION" } },
+        { "id": "D", "text": { "es": "DEPLOYMENT", "en": "DEPLOYMENT" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "CONNECTIVITY y VALIDATION son tipos de errores estándar en Mule 4. CONNECTIVITY se produce cuando hay problemas de conexión, y VALIDATION cuando los datos no cumplen las validaciones.",
+        "en": "CONNECTIVITY and VALIDATION are standard error types in Mule 4. CONNECTIVITY occurs when there are connection issues, and VALIDATION when data doesn't meet validations."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/mule-error-concept"
+      ],
+      "topic": "Error Handling",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcd1-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué conector se utiliza para realizar operaciones con bases de datos en Mule?",
+        "en": "Which connector is used to perform database operations in Mule?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "HTTP Connector", "en": "HTTP Connector" } },
+        { "id": "B", "text": { "es": "Database Connector", "en": "Database Connector" } },
+        { "id": "C", "text": { "es": "File Connector", "en": "File Connector" } },
+        { "id": "D", "text": { "es": "JMS Connector", "en": "JMS Connector" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El Database Connector permite ejecutar operaciones SQL contra bases de datos relacionales como MySQL, Oracle, SQL Server, etc.",
+        "en": "The Database Connector allows executing SQL operations against relational databases like MySQL, Oracle, SQL Server, etc."
+      },
+      "references": [
+        "https://docs.mulesoft.com/db-connector/latest/"
+      ],
+      "topic": "Flow Design",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-009",
+      "type": "single",
+      "question": {
+        "es": "¿Qué función de DataWeave se utiliza para filtrar elementos de un array?",
+        "en": "Which DataWeave function is used to filter elements from an array?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "map", "en": "map" } },
+        { "id": "B", "text": { "es": "filter", "en": "filter" } },
+        { "id": "C", "text": { "es": "pluck", "en": "pluck" } },
+        { "id": "D", "text": { "es": "reduce", "en": "reduce" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "La función 'filter' en DataWeave permite seleccionar elementos de un array que cumplan una condición específica.",
+        "en": "The 'filter' function in DataWeave allows selecting elements from an array that meet a specific condition."
+      },
+      "references": [
+        "https://docs.mulesoft.com/dataweave/latest/dw-core-functions-filter"
+      ],
+      "topic": "DataWeave",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcd1-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué scope permite ejecutar operaciones de manera asíncrona en Mule?",
+        "en": "Which scope allows executing operations asynchronously in Mule?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Try", "en": "Try" } },
+        { "id": "B", "text": { "es": "Async", "en": "Async" } },
+        { "id": "C", "text": { "es": "Parallel For Each", "en": "Parallel For Each" } },
+        { "id": "D", "text": { "es": "Scatter-Gather", "en": "Scatter-Gather" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El scope Async permite que las operaciones dentro de él se ejecuten en un thread separado de manera asíncrona, sin bloquear el flujo principal.",
+        "en": "The Async scope allows operations within it to execute in a separate thread asynchronously, without blocking the main flow."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/async-scope-reference"
+      ],
+      "topic": "Flow Design",
+      "difficulty": "medium"
+    }
+  ]
+}

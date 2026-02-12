@@ -1,0 +1,248 @@
+{
+  "certification": "AZ-104",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "az104-001",
+      "type": "single",
+      "question": {
+        "es": "¿Qué comando de Azure CLI se utiliza para crear un grupo de recursos?",
+        "en": "Which Azure CLI command is used to create a resource group?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "az group create", "en": "az group create" } },
+        { "id": "B", "text": { "es": "az resource group create", "en": "az resource group create" } },
+        { "id": "C", "text": { "es": "az create group", "en": "az create group" } },
+        { "id": "D", "text": { "es": "az rg create", "en": "az rg create" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "El comando correcto es 'az group create'. Se utiliza con los parámetros --name para el nombre del grupo y --location para la ubicación.",
+        "en": "The correct command is 'az group create'. It is used with --name parameter for the group name and --location for the location."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest#az-group-create"
+      ],
+      "topic": "Identity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az104-002",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de almacenamiento de Azure proporciona el mejor rendimiento para cargas de trabajo con muchas operaciones de E/S?",
+        "en": "Which Azure storage type provides the best performance for I/O-intensive workloads?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Standard HDD", "en": "Standard HDD" } },
+        { "id": "B", "text": { "es": "Standard SSD", "en": "Standard SSD" } },
+        { "id": "C", "text": { "es": "Premium SSD", "en": "Premium SSD" } },
+        { "id": "D", "text": { "es": "Azure Files", "en": "Azure Files" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "Premium SSD proporciona alto rendimiento y baja latencia para máquinas virtuales que ejecutan cargas de trabajo intensivas en E/S.",
+        "en": "Premium SSD provides high performance and low latency for virtual machines running I/O-intensive workloads."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types"
+      ],
+      "topic": "Storage",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-003",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de las siguientes son características de Azure Virtual Network? (Selecciona 2)",
+        "en": "Which of the following are features of Azure Virtual Network? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Aislamiento y segmentación de red", "en": "Network isolation and segmentation" } },
+        { "id": "B", "text": { "es": "Comunicación con Internet", "en": "Internet communication" } },
+        { "id": "C", "text": { "es": "Almacenamiento de archivos", "en": "File storage" } },
+        { "id": "D", "text": { "es": "Procesamiento de datos", "en": "Data processing" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "Azure Virtual Network proporciona aislamiento y segmentación de red, y permite la comunicación con Internet. El almacenamiento y procesamiento no son características de redes virtuales.",
+        "en": "Azure Virtual Network provides network isolation and segmentation, and enables Internet communication. Storage and processing are not virtual network features."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+      ],
+      "topic": "Networking",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az104-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio permite implementar máquinas virtuales idénticas automáticamente según la demanda?",
+        "en": "Which service allows you to automatically deploy identical virtual machines based on demand?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Load Balancer", "en": "Azure Load Balancer" } },
+        { "id": "B", "text": { "es": "Virtual Machine Scale Sets", "en": "Virtual Machine Scale Sets" } },
+        { "id": "C", "text": { "es": "Azure Availability Sets", "en": "Azure Availability Sets" } },
+        { "id": "D", "text": { "es": "Azure Container Instances", "en": "Azure Container Instances" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Virtual Machine Scale Sets permite crear y administrar un grupo de máquinas virtuales idénticas con equilibrio de carga que se escalan automáticamente.",
+        "en": "Virtual Machine Scale Sets lets you create and manage a group of load-balanced, identical VMs that automatically scale."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview"
+      ],
+      "topic": "Compute",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-005",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de cuenta de almacenamiento admite Azure Data Lake Storage Gen2?",
+        "en": "Which storage account type supports Azure Data Lake Storage Gen2?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Standard general-purpose v1", "en": "Standard general-purpose v1" } },
+        { "id": "B", "text": { "es": "Premium block blob", "en": "Premium block blob" } },
+        { "id": "C", "text": { "es": "Standard general-purpose v2", "en": "Standard general-purpose v2" } },
+        { "id": "D", "text": { "es": "Premium file share", "en": "Premium file share" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "Azure Data Lake Storage Gen2 requiere una cuenta de almacenamiento Standard general-purpose v2 con la característica de espacio de nombres jerárquico habilitada.",
+        "en": "Azure Data Lake Storage Gen2 requires a Standard general-purpose v2 storage account with hierarchical namespace feature enabled."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction"
+      ],
+      "topic": "Storage",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-006",
+      "type": "single",
+      "question": {
+        "es": "¿Qué herramienta se utiliza para automatizar la implementación y configuración de recursos de Azure mediante código declarativo?",
+        "en": "Which tool is used to automate deployment and configuration of Azure resources using declarative code?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure PowerShell", "en": "Azure PowerShell" } },
+        { "id": "B", "text": { "es": "Azure Resource Manager templates (ARM templates)", "en": "Azure Resource Manager templates (ARM templates)" } },
+        { "id": "C", "text": { "es": "Azure CLI", "en": "Azure CLI" } },
+        { "id": "D", "text": { "es": "Azure Portal", "en": "Azure Portal" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Las plantillas de Azure Resource Manager (ARM) usan código declarativo JSON para definir la infraestructura y configuración que desea implementar.",
+        "en": "Azure Resource Manager templates (ARM templates) use declarative JSON code to define the infrastructure and configuration you want to deploy."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview"
+      ],
+      "topic": "Compute",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-007",
+      "type": "multiple",
+      "question": {
+        "es": "¿Qué servicios de Azure se pueden usar para monitorizar el rendimiento de las aplicaciones? (Selecciona 2)",
+        "en": "Which Azure services can be used to monitor application performance? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Monitor", "en": "Azure Monitor" } },
+        { "id": "B", "text": { "es": "Application Insights", "en": "Application Insights" } },
+        { "id": "C", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } },
+        { "id": "D", "text": { "es": "Azure Service Health", "en": "Azure Service Health" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "Azure Monitor recopila métricas y logs, mientras que Application Insights es una extensión de Azure Monitor específica para el monitoreo de rendimiento de aplicaciones (APM).",
+        "en": "Azure Monitor collects metrics and logs, while Application Insights is an extension of Azure Monitor specifically for application performance monitoring (APM)."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+        "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+      ],
+      "topic": "Monitoring",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué característica de Azure AD permite a los usuarios acceder a múltiples aplicaciones con un único inicio de sesión?",
+        "en": "Which Azure AD feature allows users to access multiple applications with a single sign-in?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Multi-Factor Authentication", "en": "Multi-Factor Authentication" } },
+        { "id": "B", "text": { "es": "Single Sign-On (SSO)", "en": "Single Sign-On (SSO)" } },
+        { "id": "C", "text": { "es": "Conditional Access", "en": "Conditional Access" } },
+        { "id": "D", "text": { "es": "Identity Protection", "en": "Identity Protection" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Single Sign-On (SSO) permite a los usuarios iniciar sesión una vez y acceder automáticamente a todas las aplicaciones integradas sin necesidad de autenticarse nuevamente.",
+        "en": "Single Sign-On (SSO) allows users to sign in once and automatically access all integrated applications without needing to authenticate again."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on"
+      ],
+      "topic": "Identity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az104-009",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de balanceador de carga de Azure opera en la capa 7 del modelo OSI?",
+        "en": "Which type of Azure load balancer operates at Layer 7 of the OSI model?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Load Balancer", "en": "Azure Load Balancer" } },
+        { "id": "B", "text": { "es": "Azure Application Gateway", "en": "Azure Application Gateway" } },
+        { "id": "C", "text": { "es": "Azure Traffic Manager", "en": "Azure Traffic Manager" } },
+        { "id": "D", "text": { "es": "Azure Front Door", "en": "Azure Front Door" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Application Gateway es un balanceador de carga de tráfico web (HTTP/HTTPS) que opera en la capa 7 (aplicación) del modelo OSI, mientras que Azure Load Balancer opera en la capa 4.",
+        "en": "Azure Application Gateway is a web traffic (HTTP/HTTPS) load balancer that operates at Layer 7 (application layer) of the OSI model, while Azure Load Balancer operates at Layer 4."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+      ],
+      "topic": "Networking",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az104-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué característica de Azure Backup permite restaurar máquinas virtuales completas?",
+        "en": "Which Azure Backup feature allows you to restore complete virtual machines?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "File-level restore", "en": "File-level restore" } },
+        { "id": "B", "text": { "es": "VM restore", "en": "VM restore" } },
+        { "id": "C", "text": { "es": "Disk restore", "en": "Disk restore" } },
+        { "id": "D", "text": { "es": "Snapshot restore", "en": "Snapshot restore" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "VM restore permite restaurar una máquina virtual completa desde un punto de recuperación, incluyendo todos los discos y la configuración.",
+        "en": "VM restore allows you to restore a complete virtual machine from a recovery point, including all disks and configuration."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms"
+      ],
+      "topic": "Compute",
+      "difficulty": "medium"
+    }
+  ]
+}

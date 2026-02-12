@@ -1,0 +1,247 @@
+{
+  "certification": "MCIA",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "mcia-001",
+      "type": "single",
+      "question": {
+        "es": "¿Qué principio de diseño arquitectónico promueve la reutilización y composición de APIs?",
+        "en": "Which architectural design principle promotes reusability and composition of APIs?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "API-led connectivity", "en": "API-led connectivity" } },
+        { "id": "B", "text": { "es": "Monolithic architecture", "en": "Monolithic architecture" } },
+        { "id": "C", "text": { "es": "Point-to-point integration", "en": "Point-to-point integration" } },
+        { "id": "D", "text": { "es": "Tightly coupled systems", "en": "Tightly coupled systems" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "API-led connectivity organiza las APIs en capas (Experience, Process, System) promoviendo la reutilización, composición y desacoplamiento de sistemas.",
+        "en": "API-led connectivity organizes APIs into layers (Experience, Process, System) promoting reusability, composition, and system decoupling."
+      },
+      "references": [
+        "https://www.mulesoft.com/resources/api/api-led-connectivity"
+      ],
+      "topic": "API-Led Connectivity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcia-002",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son las tres capas de API-led connectivity? (Selecciona 3)",
+        "en": "What are the three layers of API-led connectivity? (Select 3)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Experience", "en": "Experience" } },
+        { "id": "B", "text": { "es": "Process", "en": "Process" } },
+        { "id": "C", "text": { "es": "System", "en": "System" } },
+        { "id": "D", "text": { "es": "Application", "en": "Application" } }
+      ],
+      "correctAnswers": ["A", "B", "C"],
+      "explanation": {
+        "es": "Las tres capas de API-led connectivity son: Experience (APIs específicas del canal), Process (APIs de orquestación y lógica de negocio), y System (APIs que exponen sistemas core).",
+        "en": "The three layers of API-led connectivity are: Experience (channel-specific APIs), Process (orchestration and business logic APIs), and System (APIs that expose core systems)."
+      },
+      "references": [
+        "https://www.mulesoft.com/resources/api/api-led-connectivity"
+      ],
+      "topic": "API-Led Connectivity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcia-003",
+      "type": "single",
+      "question": {
+        "es": "¿Qué estrategia de caché mejora el rendimiento al almacenar respuestas de APIs?",
+        "en": "Which caching strategy improves performance by storing API responses?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Write-through", "en": "Write-through" } },
+        { "id": "B", "text": { "es": "Cache-aside", "en": "Cache-aside" } },
+        { "id": "C", "text": { "es": "Write-back", "en": "Write-back" } },
+        { "id": "D", "text": { "es": "Todas las anteriores", "en": "All of the above" } }
+      ],
+      "correctAnswers": ["D"],
+      "explanation": {
+        "es": "Todas son estrategias válidas de caché. Cache-aside es común para APIs donde la aplicación gestiona el caché, write-through actualiza caché y store simultáneamente, y write-back difiere las escrituras.",
+        "en": "All are valid caching strategies. Cache-aside is common for APIs where the application manages the cache, write-through updates cache and store simultaneously, and write-back defers writes."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/cache-scope"
+      ],
+      "topic": "Performance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcia-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué política de seguridad en API Manager requiere credenciales para acceder a una API?",
+        "en": "Which security policy in API Manager requires credentials to access an API?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Rate Limiting", "en": "Rate Limiting" } },
+        { "id": "B", "text": { "es": "Client ID Enforcement", "en": "Client ID Enforcement" } },
+        { "id": "C", "text": { "es": "IP Whitelist", "en": "IP Whitelist" } },
+        { "id": "D", "text": { "es": "CORS", "en": "CORS" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Client ID Enforcement requiere que los clientes proporcionen Client ID y Client Secret para acceder a la API, validando su autenticación.",
+        "en": "Client ID Enforcement requires clients to provide Client ID and Client Secret to access the API, validating their authentication."
+      },
+      "references": [
+        "https://docs.mulesoft.com/api-manager/latest/client-id-based-policies"
+      ],
+      "topic": "Security",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcia-005",
+      "type": "single",
+      "question": {
+        "es": "¿Qué entorno de despliegue de Mule ofrece el mayor control sobre la infraestructura?",
+        "en": "Which Mule deployment environment offers the most control over infrastructure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "CloudHub", "en": "CloudHub" } },
+        { "id": "B", "text": { "es": "Runtime Fabric", "en": "Runtime Fabric" } },
+        { "id": "C", "text": { "es": "On-premises", "en": "On-premises" } },
+        { "id": "D", "text": { "es": "Hybrid deployment", "en": "Hybrid deployment" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "El despliegue on-premises (en las instalaciones) proporciona el máximo control sobre la infraestructura, aunque requiere más gestión operativa.",
+        "en": "On-premises deployment provides maximum control over infrastructure, although it requires more operational management."
+      },
+      "references": [
+        "https://docs.mulesoft.com/general/intro-deploy-options"
+      ],
+      "topic": "Deployment",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcia-006",
+      "type": "single",
+      "question": {
+        "es": "¿Qué patrón de integración se usa cuando múltiples sistemas necesitan ser notificados de un evento?",
+        "en": "Which integration pattern is used when multiple systems need to be notified of an event?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Request-Reply", "en": "Request-Reply" } },
+        { "id": "B", "text": { "es": "Publish-Subscribe", "en": "Publish-Subscribe" } },
+        { "id": "C", "text": { "es": "Point-to-Point", "en": "Point-to-Point" } },
+        { "id": "D", "text": { "es": "Batch Processing", "en": "Batch Processing" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El patrón Publish-Subscribe permite que un evento sea publicado a múltiples suscriptores interesados, desacoplando productores de consumidores.",
+        "en": "The Publish-Subscribe pattern allows an event to be published to multiple interested subscribers, decoupling producers from consumers."
+      },
+      "references": [
+        "https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html"
+      ],
+      "topic": "Architecture",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcia-007",
+      "type": "multiple",
+      "question": {
+        "es": "¿Qué factores afectan el rendimiento de una aplicación Mule? (Selecciona 2)",
+        "en": "What factors affect the performance of a Mule application? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Tamaño del thread pool", "en": "Thread pool size" } },
+        { "id": "B", "text": { "es": "Uso de DataWeave", "en": "DataWeave usage" } },
+        { "id": "C", "text": { "es": "Color del logo", "en": "Logo color" } },
+        { "id": "D", "text": { "es": "Nombre del proyecto", "en": "Project name" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "El tamaño del thread pool afecta la concurrencia y el uso de DataWeave (especialmente transformaciones complejas) puede impactar el rendimiento. Los aspectos visuales y nombres no afectan el rendimiento.",
+        "en": "Thread pool size affects concurrency and DataWeave usage (especially complex transformations) can impact performance. Visual aspects and names don't affect performance."
+      },
+      "references": [
+        "https://docs.mulesoft.com/mule-runtime/latest/tuning-guide"
+      ],
+      "topic": "Performance",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcia-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué herramienta de Anypoint Platform se utiliza para monitorear APIs en tiempo real?",
+        "en": "Which Anypoint Platform tool is used to monitor APIs in real-time?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "API Designer", "en": "API Designer" } },
+        { "id": "B", "text": { "es": "Anypoint Studio", "en": "Anypoint Studio" } },
+        { "id": "C", "text": { "es": "Anypoint Monitoring", "en": "Anypoint Monitoring" } },
+        { "id": "D", "text": { "es": "Exchange", "en": "Exchange" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "Anypoint Monitoring proporciona visibilidad en tiempo real del rendimiento y salud de las aplicaciones y APIs desplegadas.",
+        "en": "Anypoint Monitoring provides real-time visibility into the performance and health of deployed applications and APIs."
+      },
+      "references": [
+        "https://docs.mulesoft.com/monitoring/"
+      ],
+      "topic": "Performance",
+      "difficulty": "easy"
+    },
+    {
+      "id": "mcia-009",
+      "type": "single",
+      "question": {
+        "es": "¿Qué componente de Runtime Fabric gestiona el ciclo de vida de las aplicaciones Mule?",
+        "en": "Which Runtime Fabric component manages the lifecycle of Mule applications?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Docker", "en": "Docker" } },
+        { "id": "B", "text": { "es": "Kubernetes", "en": "Kubernetes" } },
+        { "id": "C", "text": { "es": "Anypoint Control Plane", "en": "Anypoint Control Plane" } },
+        { "id": "D", "text": { "es": "Load Balancer", "en": "Load Balancer" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Runtime Fabric utiliza Kubernetes como orquestador de contenedores para gestionar el ciclo de vida, escalado y alta disponibilidad de las aplicaciones Mule.",
+        "en": "Runtime Fabric uses Kubernetes as a container orchestrator to manage the lifecycle, scaling, and high availability of Mule applications."
+      },
+      "references": [
+        "https://docs.mulesoft.com/runtime-fabric/latest/"
+      ],
+      "topic": "Deployment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mcia-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué método de autenticación proporciona la mayor seguridad para APIs RESTful?",
+        "en": "Which authentication method provides the highest security for RESTful APIs?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Basic Authentication", "en": "Basic Authentication" } },
+        { "id": "B", "text": { "es": "API Key", "en": "API Key" } },
+        { "id": "C", "text": { "es": "OAuth 2.0", "en": "OAuth 2.0" } },
+        { "id": "D", "text": { "es": "Query Parameters", "en": "Query Parameters" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "OAuth 2.0 proporciona el más alto nivel de seguridad con tokens de acceso temporales, soporte para múltiples flows, y separación de concerns entre autenticación y autorización.",
+        "en": "OAuth 2.0 provides the highest level of security with temporary access tokens, support for multiple flows, and separation of concerns between authentication and authorization."
+      },
+      "references": [
+        "https://docs.mulesoft.com/api-manager/latest/oauth-policy-implementation"
+      ],
+      "topic": "Security",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "certification": "AZ-305",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "az305-001",
+      "type": "single",
+      "question": {
+        "es": "¿Qué patrón de arquitectura se recomienda para aplicaciones que requieren alta disponibilidad en múltiples regiones?",
+        "en": "Which architectural pattern is recommended for applications requiring high availability across multiple regions?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Monolítico", "en": "Monolithic" } },
+        { "id": "B", "text": { "es": "Activo-Pasivo", "en": "Active-Passive" } },
+        { "id": "C", "text": { "es": "Activo-Activo", "en": "Active-Active" } },
+        { "id": "D", "text": { "es": "Maestro-Esclavo", "en": "Master-Slave" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "El patrón Activo-Activo permite que las aplicaciones funcionen simultáneamente en múltiples regiones, proporcionando alta disponibilidad y recuperación ante desastres.",
+        "en": "The Active-Active pattern allows applications to run simultaneously in multiple regions, providing high availability and disaster recovery."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/multi-region"
+      ],
+      "topic": "Design Solutions",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-002",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son componentes clave de una arquitectura basada en microservicios en Azure? (Selecciona 2)",
+        "en": "What are key components of a microservices-based architecture in Azure? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Kubernetes Service (AKS)", "en": "Azure Kubernetes Service (AKS)" } },
+        { "id": "B", "text": { "es": "Azure Service Bus", "en": "Azure Service Bus" } },
+        { "id": "C", "text": { "es": "Azure Virtual Desktop", "en": "Azure Virtual Desktop" } },
+        { "id": "D", "text": { "es": "Azure Site Recovery", "en": "Azure Site Recovery" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "AKS proporciona orquestación de contenedores y Azure Service Bus facilita la comunicación entre microservicios. Los otros servicios no son componentes típicos de arquitecturas de microservicios.",
+        "en": "AKS provides container orchestration and Azure Service Bus facilitates communication between microservices. The other services are not typical components of microservices architectures."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/architecture/microservices/"
+      ],
+      "topic": "Design Solutions",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-003",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona una solución de identidad completamente gestionada para aplicaciones?",
+        "en": "Which Azure service provides a fully managed identity solution for applications?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure AD Domain Services", "en": "Azure AD Domain Services" } },
+        { "id": "B", "text": { "es": "Azure Active Directory", "en": "Azure Active Directory" } },
+        { "id": "C", "text": { "es": "Managed Identities", "en": "Managed Identities" } },
+        { "id": "D", "text": { "es": "Azure Key Vault", "en": "Azure Key Vault" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "Managed Identities proporciona una identidad gestionada automáticamente en Azure AD para que las aplicaciones se conecten a recursos sin necesidad de credenciales en el código.",
+        "en": "Managed Identities provides an automatically managed identity in Azure AD for applications to connect to resources without credentials in code."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview"
+      ],
+      "topic": "Identity",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué estrategia de backup proporciona el RPO (Recovery Point Objective) más bajo?",
+        "en": "Which backup strategy provides the lowest RPO (Recovery Point Objective)?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Backup diario", "en": "Daily backup" } },
+        { "id": "B", "text": { "es": "Backup semanal", "en": "Weekly backup" } },
+        { "id": "C", "text": { "es": "Replicación continua", "en": "Continuous replication" } },
+        { "id": "D", "text": { "es": "Backup mensual", "en": "Monthly backup" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "La replicación continua proporciona el RPO más bajo (cercano a cero) al replicar cambios en tiempo real, minimizando la pérdida potencial de datos.",
+        "en": "Continuous replication provides the lowest RPO (near-zero) by replicating changes in real-time, minimizing potential data loss."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+      ],
+      "topic": "Business Continuity",
+      "difficulty": "hard"
+    },
+    {
+      "id": "az305-005",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure se recomienda para implementar una solución de data warehouse empresarial?",
+        "en": "Which Azure service is recommended for implementing an enterprise data warehouse solution?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure SQL Database", "en": "Azure SQL Database" } },
+        { "id": "B", "text": { "es": "Azure Synapse Analytics", "en": "Azure Synapse Analytics" } },
+        { "id": "C", "text": { "es": "Azure Cosmos DB", "en": "Azure Cosmos DB" } },
+        { "id": "D", "text": { "es": "Azure Database for PostgreSQL", "en": "Azure Database for PostgreSQL" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Synapse Analytics (anteriormente SQL Data Warehouse) está diseñado específicamente para análisis de big data y data warehousing empresarial.",
+        "en": "Azure Synapse Analytics (formerly SQL Data Warehouse) is specifically designed for big data analytics and enterprise data warehousing."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+      ],
+      "topic": "Data Storage",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az305-006",
+      "type": "multiple",
+      "question": {
+        "es": "¿Qué factores se deben considerar al diseñar para escalabilidad en Azure? (Selecciona 2)",
+        "en": "What factors should be considered when designing for scalability in Azure? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Desacoplamiento de componentes", "en": "Decoupling of components" } },
+        { "id": "B", "text": { "es": "Uso de arquitectura sin estado", "en": "Use of stateless architecture" } },
+        { "id": "C", "text": { "es": "Minimizar el uso de servicios gestionados", "en": "Minimize use of managed services" } },
+        { "id": "D", "text": { "es": "Almacenar estado en instancias individuales", "en": "Store state in individual instances" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "El desacoplamiento de componentes y la arquitectura sin estado son fundamentales para la escalabilidad, permitiendo escalar componentes independientemente y añadir instancias fácilmente.",
+        "en": "Decoupling components and stateless architecture are fundamental to scalability, allowing components to scale independently and instances to be added easily."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/architecture/framework/scalability/design-scale"
+      ],
+      "topic": "Design Solutions",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-007",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio proporciona una red de distribución de contenido (CDN) global en Azure?",
+        "en": "Which service provides a global content delivery network (CDN) in Azure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Traffic Manager", "en": "Azure Traffic Manager" } },
+        { "id": "B", "text": { "es": "Azure Front Door", "en": "Azure Front Door" } },
+        { "id": "C", "text": { "es": "Azure Load Balancer", "en": "Azure Load Balancer" } },
+        { "id": "D", "text": { "es": "Azure Application Gateway", "en": "Azure Application Gateway" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Front Door es un CDN global y un balanceador de carga de aplicaciones que proporciona aceleración de aplicaciones web y alta disponibilidad.",
+        "en": "Azure Front Door is a global CDN and application load balancer that provides web application acceleration and high availability."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview"
+      ],
+      "topic": "Infrastructure",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué método de cifrado protege los datos en tránsito en Azure?",
+        "en": "Which encryption method protects data in transit in Azure?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Disk Encryption", "en": "Azure Disk Encryption" } },
+        { "id": "B", "text": { "es": "TLS/SSL", "en": "TLS/SSL" } },
+        { "id": "C", "text": { "es": "BitLocker", "en": "BitLocker" } },
+        { "id": "D", "text": { "es": "Storage Service Encryption", "en": "Storage Service Encryption" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "TLS/SSL se utiliza para cifrar datos en tránsito entre clientes y servicios de Azure. Los otros métodos se usan para cifrado en reposo.",
+        "en": "TLS/SSL is used to encrypt data in transit between clients and Azure services. The other methods are used for encryption at rest."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview"
+      ],
+      "topic": "Identity",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az305-009",
+      "type": "single",
+      "question": {
+        "es": "¿Qué patrón de diseño se recomienda para manejar fallos transitorios en aplicaciones cloud?",
+        "en": "Which design pattern is recommended for handling transient failures in cloud applications?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Singleton", "en": "Singleton" } },
+        { "id": "B", "text": { "es": "Retry Pattern", "en": "Retry Pattern" } },
+        { "id": "C", "text": { "es": "Factory", "en": "Factory" } },
+        { "id": "D", "text": { "es": "Observer", "en": "Observer" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "El Retry Pattern permite que una aplicación reintente una operación fallida con la expectativa de que tenga éxito en intentos posteriores, manejando fallos transitorios de red o servicio.",
+        "en": "The Retry Pattern allows an application to retry a failed operation with the expectation that it will succeed on subsequent attempts, handling transient network or service failures."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+      ],
+      "topic": "Design Solutions",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az305-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué Azure service proporciona análisis de seguridad y recomendaciones para mejorar la postura de seguridad?",
+        "en": "Which Azure service provides security analytics and recommendations to improve security posture?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Security Center / Microsoft Defender for Cloud", "en": "Azure Security Center / Microsoft Defender for Cloud" } },
+        { "id": "B", "text": { "es": "Azure Sentinel", "en": "Azure Sentinel" } },
+        { "id": "C", "text": { "es": "Azure DDoS Protection", "en": "Azure DDoS Protection" } },
+        { "id": "D", "text": { "es": "Azure Firewall", "en": "Azure Firewall" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Microsoft Defender for Cloud (anteriormente Azure Security Center) proporciona gestión de la postura de seguridad y protección contra amenazas para cargas de trabajo en Azure.",
+        "en": "Microsoft Defender for Cloud (formerly Azure Security Center) provides security posture management and threat protection for workloads in Azure."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+      ],
+      "topic": "Identity",
+      "difficulty": "easy"
+    }
+  ]
+}

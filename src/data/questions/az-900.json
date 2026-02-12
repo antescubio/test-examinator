@@ -1,0 +1,272 @@
+{
+  "certification": "AZ-900",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "az900-001",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es Azure Resource Manager (ARM)?",
+        "en": "What is Azure Resource Manager (ARM)?"
+      },
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "es": "Un servicio de despliegue y gestión de recursos de Azure",
+            "en": "A deployment and management service for Azure resources"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "es": "Una base de datos relacional en la nube",
+            "en": "A cloud relational database"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "es": "Un servicio de monitorización de aplicaciones",
+            "en": "An application monitoring service"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "es": "Un firewall de aplicaciones web",
+            "en": "A web application firewall"
+          }
+        }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Resource Manager (ARM) es el servicio de despliegue y gestión de Azure. Proporciona una capa de gestión que permite crear, actualizar y eliminar recursos en la suscripción de Azure de forma consistente.",
+        "en": "Azure Resource Manager (ARM) is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure subscription consistently."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview"
+      ],
+      "topic": "Azure Architecture",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-002",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de los siguientes son modelos de servicio en la nube? (Selecciona 3)",
+        "en": "Which of the following are cloud service models? (Select 3)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "IaaS (Infrastructure as a Service)", "en": "IaaS (Infrastructure as a Service)" } },
+        { "id": "B", "text": { "es": "PaaS (Platform as a Service)", "en": "PaaS (Platform as a Service)" } },
+        { "id": "C", "text": { "es": "SaaS (Software as a Service)", "en": "SaaS (Software as a Service)" } },
+        { "id": "D", "text": { "es": "DaaS (Desktop as a Service)", "en": "DaaS (Desktop as a Service)" } }
+      ],
+      "correctAnswers": ["A", "B", "C"],
+      "explanation": {
+        "es": "Los tres modelos principales de servicio en la nube son IaaS (Infraestructura como Servicio), PaaS (Plataforma como Servicio) y SaaS (Software como Servicio). DaaS es un tipo específico de servicio pero no forma parte de los tres modelos fundamentales.",
+        "en": "The three primary cloud service models are IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service). DaaS is a specific type of service but not part of the three fundamental models."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts"
+      ],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-003",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de nube permite a las organizaciones ejecutar aplicaciones en clouds públicos y privados?",
+        "en": "What type of cloud allows organizations to run applications in public and private clouds?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Nube pública", "en": "Public cloud" } },
+        { "id": "B", "text": { "es": "Nube privada", "en": "Private cloud" } },
+        { "id": "C", "text": { "es": "Nube híbrida", "en": "Hybrid cloud" } },
+        { "id": "D", "text": { "es": "Nube comunitaria", "en": "Community cloud" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "La nube híbrida es un entorno informático que combina una nube pública y una nube privada, permitiendo que los datos y las aplicaciones se compartan entre ellas.",
+        "en": "Hybrid cloud is a computing environment that combines a public cloud and a private cloud, allowing data and applications to be shared between them."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/"
+      ],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona un sistema de archivos compartidos en la nube?",
+        "en": "Which Azure service provides a shared file system in the cloud?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Blob Storage", "en": "Azure Blob Storage" } },
+        { "id": "B", "text": { "es": "Azure Files", "en": "Azure Files" } },
+        { "id": "C", "text": { "es": "Azure Queue Storage", "en": "Azure Queue Storage" } },
+        { "id": "D", "text": { "es": "Azure Table Storage", "en": "Azure Table Storage" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Files ofrece recursos compartidos de archivos en la nube completamente administrados a los que se puede acceder mediante el protocolo SMB (Server Message Block) estándar del sector.",
+        "en": "Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+      ],
+      "topic": "Azure Services",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-005",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son beneficios de la computación en la nube? (Selecciona 2)",
+        "en": "What are benefits of cloud computing? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Alta disponibilidad", "en": "High availability" } },
+        { "id": "B", "text": { "es": "Escalabilidad", "en": "Scalability" } },
+        { "id": "C", "text": { "es": "Gastos de capital ilimitados", "en": "Unlimited capital expenses" } },
+        { "id": "D", "text": { "es": "Control físico total del hardware", "en": "Total physical control of hardware" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "La alta disponibilidad y la escalabilidad son dos de los principales beneficios de la computación en la nube. Los gastos de capital se reducen (no aumentan) y no se tiene control físico directo del hardware.",
+        "en": "High availability and scalability are two of the main benefits of cloud computing. Capital expenses are reduced (not increased) and you don't have direct physical control of the hardware."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/"
+      ],
+      "topic": "Cloud Concepts",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-006",
+      "type": "single",
+      "question": {
+        "es": "¿Qué modelo de precios de Azure permite pagar solo por los recursos que se usan?",
+        "en": "Which Azure pricing model allows you to pay only for the resources you use?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Pago por uso (Pay-as-you-go)", "en": "Pay-as-you-go" } },
+        { "id": "B", "text": { "es": "Suscripción anual fija", "en": "Fixed annual subscription" } },
+        { "id": "C", "text": { "es": "Licencia perpetua", "en": "Perpetual license" } },
+        { "id": "D", "text": { "es": "Pago único adelantado", "en": "Single upfront payment" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "El modelo de pago por uso (Pay-as-you-go) permite pagar solo por los recursos de computación que se utilizan, sin costos iniciales ni compromisos a largo plazo.",
+        "en": "The Pay-as-you-go pricing model allows you to pay only for the compute resources you use, with no upfront costs or long-term commitments."
+      },
+      "references": [
+        "https://azure.microsoft.com/en-us/pricing/"
+      ],
+      "topic": "Pricing",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-007",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona protección DDoS para las aplicaciones?",
+        "en": "Which Azure service provides DDoS protection for applications?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Firewall", "en": "Azure Firewall" } },
+        { "id": "B", "text": { "es": "Azure DDoS Protection", "en": "Azure DDoS Protection" } },
+        { "id": "C", "text": { "es": "Azure Security Center", "en": "Azure Security Center" } },
+        { "id": "D", "text": { "es": "Azure Sentinel", "en": "Azure Sentinel" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure DDoS Protection proporciona contramedidas mejoradas de DDoS para defender las aplicaciones contra ataques DDoS. Se combina con las mejores prácticas de diseño de aplicaciones para proporcionar defensa contra ataques DDoS.",
+        "en": "Azure DDoS Protection provides enhanced DDoS mitigation features to defend applications against DDoS attacks. It is combined with application design best practices to provide defense against DDoS attacks."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview"
+      ],
+      "topic": "Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az900-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué es una región de Azure?",
+        "en": "What is an Azure region?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Un conjunto de datacenters implementados dentro de un perímetro definido por latencia", "en": "A set of datacenters deployed within a latency-defined perimeter" } },
+        { "id": "B", "text": { "es": "Un único datacenter con múltiples servidores", "en": "A single datacenter with multiple servers" } },
+        { "id": "C", "text": { "es": "Una zona de disponibilidad", "en": "An availability zone" } },
+        { "id": "D", "text": { "es": "Un grupo de recursos", "en": "A resource group" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Una región de Azure es un conjunto de datacenters implementados dentro de un perímetro definido por latencia y conectados a través de una red regional dedicada de baja latencia.",
+        "en": "An Azure region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+      ],
+      "topic": "Azure Architecture",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-009",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de los siguientes son servicios de base de datos de Azure? (Selecciona 2)",
+        "en": "Which of the following are Azure database services? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure SQL Database", "en": "Azure SQL Database" } },
+        { "id": "B", "text": { "es": "Azure Cosmos DB", "en": "Azure Cosmos DB" } },
+        { "id": "C", "text": { "es": "Azure Blob Storage", "en": "Azure Blob Storage" } },
+        { "id": "D", "text": { "es": "Azure File Sync", "en": "Azure File Sync" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "Azure SQL Database y Azure Cosmos DB son servicios de base de datos administrados. Azure Blob Storage es almacenamiento de objetos y Azure File Sync es un servicio de sincronización de archivos.",
+        "en": "Azure SQL Database and Azure Cosmos DB are managed database services. Azure Blob Storage is object storage and Azure File Sync is a file synchronization service."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview",
+        "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+      ],
+      "topic": "Azure Services",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az900-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué herramienta de Azure se utiliza para estimar los costos antes de implementar recursos?",
+        "en": "Which Azure tool is used to estimate costs before deploying resources?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Cost Management", "en": "Azure Cost Management" } },
+        { "id": "B", "text": { "es": "Azure Pricing Calculator", "en": "Azure Pricing Calculator" } },
+        { "id": "C", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } },
+        { "id": "D", "text": { "es": "Azure Monitor", "en": "Azure Monitor" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Pricing Calculator ayuda a estimar los costos de los servicios de Azure antes de implementarlos. Azure Cost Management se usa para analizar costos después del despliegue.",
+        "en": "Azure Pricing Calculator helps estimate the costs of Azure services before deploying them. Azure Cost Management is used to analyze costs after deployment."
+      },
+      "references": [
+        "https://azure.microsoft.com/en-us/pricing/calculator/"
+      ],
+      "topic": "Pricing",
+      "difficulty": "easy"
+    }
+  ]
+}

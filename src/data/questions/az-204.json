@@ -1,0 +1,247 @@
+{
+  "certification": "AZ-204",
+  "version": "1.0",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "az204-001",
+      "type": "single",
+      "question": {
+        "es": "¿Qué plan de servicio de Azure App Service proporciona autoescalado?",
+        "en": "Which Azure App Service plan provides autoscaling?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Free", "en": "Free" } },
+        { "id": "B", "text": { "es": "Shared", "en": "Shared" } },
+        { "id": "C", "text": { "es": "Basic", "en": "Basic" } },
+        { "id": "D", "text": { "es": "Standard", "en": "Standard" } }
+      ],
+      "correctAnswers": ["D"],
+      "explanation": {
+        "es": "El autoescalado está disponible en los planes Standard, Premium y Isolated. Los planes Free, Shared y Basic no admiten autoescalado.",
+        "en": "Autoscaling is available in Standard, Premium, and Isolated plans. Free, Shared, and Basic plans do not support autoscaling."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans"
+      ],
+      "topic": "Azure Compute",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az204-002",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles de los siguientes son tipos de Azure Functions triggers? (Selecciona 2)",
+        "en": "Which of the following are types of Azure Functions triggers? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "HTTP trigger", "en": "HTTP trigger" } },
+        { "id": "B", "text": { "es": "Timer trigger", "en": "Timer trigger" } },
+        { "id": "C", "text": { "es": "Database trigger", "en": "Database trigger" } },
+        { "id": "D", "text": { "es": "Memory trigger", "en": "Memory trigger" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "HTTP trigger y Timer trigger son tipos válidos de triggers en Azure Functions. Database trigger y Memory trigger no son tipos de trigger estándar.",
+        "en": "HTTP trigger and Timer trigger are valid trigger types in Azure Functions. Database trigger and Memory trigger are not standard trigger types."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings"
+      ],
+      "topic": "Azure Compute",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az204-003",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure se recomienda para almacenar secretos, claves y certificados de forma segura?",
+        "en": "Which Azure service is recommended for securely storing secrets, keys, and certificates?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Storage Account", "en": "Azure Storage Account" } },
+        { "id": "B", "text": { "es": "Azure Key Vault", "en": "Azure Key Vault" } },
+        { "id": "C", "text": { "es": "Azure App Configuration", "en": "Azure App Configuration" } },
+        { "id": "D", "text": { "es": "Azure SQL Database", "en": "Azure SQL Database" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Azure Key Vault es el servicio diseñado específicamente para almacenar de forma segura secretos, claves de cifrado y certificados.",
+        "en": "Azure Key Vault is the service specifically designed to securely store secrets, encryption keys, and certificates."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+      ],
+      "topic": "Azure Security",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az204-004",
+      "type": "single",
+      "question": {
+        "es": "¿Qué nivel de consistencia de Azure Cosmos DB proporciona la mayor disponibilidad pero con eventual consistencia?",
+        "en": "Which Azure Cosmos DB consistency level provides the highest availability but with eventual consistency?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Strong", "en": "Strong" } },
+        { "id": "B", "text": { "es": "Bounded staleness", "en": "Bounded staleness" } },
+        { "id": "C", "text": { "es": "Session", "en": "Session" } },
+        { "id": "D", "text": { "es": "Eventual", "en": "Eventual" } }
+      ],
+      "correctAnswers": ["D"],
+      "explanation": {
+        "es": "El nivel de consistencia Eventual proporciona la mayor disponibilidad y el menor rendimiento garantizando que eventualmente todas las réplicas convergerán.",
+        "en": "The Eventual consistency level provides the highest availability and lowest latency while guaranteeing that all replicas will eventually converge."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels"
+      ],
+      "topic": "Azure Storage",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az204-005",
+      "type": "single",
+      "question": {
+        "es": "¿Qué clase de Azure Blob Storage es la más económica para datos que se acceden raramente?",
+        "en": "Which Azure Blob Storage tier is most cost-effective for rarely accessed data?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Hot", "en": "Hot" } },
+        { "id": "B", "text": { "es": "Cool", "en": "Cool" } },
+        { "id": "C", "text": { "es": "Archive", "en": "Archive" } },
+        { "id": "D", "text": { "es": "Premium", "en": "Premium" } }
+      ],
+      "correctAnswers": ["C"],
+      "explanation": {
+        "es": "El nivel Archive es el más económico para almacenamiento a largo plazo de datos que rara vez se acceden y pueden tolerar varias horas de latencia de recuperación.",
+        "en": "The Archive tier is the most cost-effective for long-term storage of data that is rarely accessed and can tolerate several hours of retrieval latency."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+      ],
+      "topic": "Azure Storage",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az204-006",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure proporciona autenticación y autorización para aplicaciones web y APIs?",
+        "en": "Which Azure service provides authentication and authorization for web apps and APIs?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Active Directory B2C", "en": "Azure Active Directory B2C" } },
+        { "id": "B", "text": { "es": "Azure Key Vault", "en": "Azure Key Vault" } },
+        { "id": "C", "text": { "es": "Azure API Management", "en": "Azure API Management" } },
+        { "id": "D", "text": { "es": "Azure Front Door", "en": "Azure Front Door" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Active Directory B2C es un servicio de gestión de identidades que permite personalizar y controlar cómo los clientes se registran, inician sesión y administran sus perfiles.",
+        "en": "Azure Active Directory B2C is an identity management service that enables you to customize and control how customers sign up, sign in, and manage their profiles."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview"
+      ],
+      "topic": "Azure Security",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az204-007",
+      "type": "multiple",
+      "question": {
+        "es": "¿Cuáles son beneficios de usar Azure Container Instances? (Selecciona 2)",
+        "en": "What are benefits of using Azure Container Instances? (Select 2)"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Inicio rápido de contenedores", "en": "Fast container startup" } },
+        { "id": "B", "text": { "es": "Facturación por segundo", "en": "Per-second billing" } },
+        { "id": "C", "text": { "es": "Orquestación automática de múltiples contenedores", "en": "Automatic orchestration of multiple containers" } },
+        { "id": "D", "text": { "es": "Gestión de clústeres Kubernetes", "en": "Kubernetes cluster management" } }
+      ],
+      "correctAnswers": ["A", "B"],
+      "explanation": {
+        "es": "Azure Container Instances ofrece inicio rápido de contenedores y facturación por segundo. Para orquestación y gestión de clústeres se usa Azure Kubernetes Service (AKS).",
+        "en": "Azure Container Instances offers fast container startup and per-second billing. For orchestration and cluster management, use Azure Kubernetes Service (AKS)."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+      ],
+      "topic": "Azure Compute",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az204-008",
+      "type": "single",
+      "question": {
+        "es": "¿Qué servicio de Azure se utiliza para orquestar y gestionar mensajes entre servicios distribuidos?",
+        "en": "Which Azure service is used to orchestrate and manage messages between distributed services?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Service Bus", "en": "Azure Service Bus" } },
+        { "id": "B", "text": { "es": "Azure Event Hub", "en": "Azure Event Hub" } },
+        { "id": "C", "text": { "es": "Azure Storage Queue", "en": "Azure Storage Queue" } },
+        { "id": "D", "text": { "es": "Azure Logic Apps", "en": "Azure Logic Apps" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Service Bus es un servicio de mensajería empresarial con colas y publicación/suscripción que proporciona mensajería confiable entre servicios distribuidos.",
+        "en": "Azure Service Bus is an enterprise messaging service with queues and publish-subscribe that provides reliable messaging between distributed services."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+      ],
+      "topic": "Integration",
+      "difficulty": "medium"
+    },
+    {
+      "id": "az204-009",
+      "type": "single",
+      "question": {
+        "es": "¿Qué herramienta de Azure permite supervisar el rendimiento de aplicaciones en tiempo real?",
+        "en": "Which Azure tool allows you to monitor application performance in real-time?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Azure Monitor Logs", "en": "Azure Monitor Logs" } },
+        { "id": "B", "text": { "es": "Application Insights", "en": "Application Insights" } },
+        { "id": "C", "text": { "es": "Azure Advisor", "en": "Azure Advisor" } },
+        { "id": "D", "text": { "es": "Azure Policy", "en": "Azure Policy" } }
+      ],
+      "correctAnswers": ["B"],
+      "explanation": {
+        "es": "Application Insights es una característica de Azure Monitor que proporciona monitoreo del rendimiento de aplicaciones (APM) en tiempo real.",
+        "en": "Application Insights is a feature of Azure Monitor that provides real-time application performance monitoring (APM)."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+      ],
+      "topic": "Monitoring",
+      "difficulty": "easy"
+    },
+    {
+      "id": "az204-010",
+      "type": "single",
+      "question": {
+        "es": "¿Qué tipo de autenticación usa Azure Functions para asegurar endpoints HTTP?",
+        "en": "What type of authentication does Azure Functions use to secure HTTP endpoints?"
+      },
+      "options": [
+        { "id": "A", "text": { "es": "Function keys", "en": "Function keys" } },
+        { "id": "B", "text": { "es": "OAuth 2.0", "en": "OAuth 2.0" } },
+        { "id": "C", "text": { "es": "SAML", "en": "SAML" } },
+        { "id": "D", "text": { "es": "Kerberos", "en": "Kerberos" } }
+      ],
+      "correctAnswers": ["A"],
+      "explanation": {
+        "es": "Azure Functions utiliza function keys (claves de función) para proporcionar autenticación básica a nivel de función. También se puede integrar con Azure AD para escenarios más complejos.",
+        "en": "Azure Functions uses function keys to provide basic function-level authentication. It can also integrate with Azure AD for more complex scenarios."
+      },
+      "references": [
+        "https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts"
+      ],
+      "topic": "Azure Security",
+      "difficulty": "medium"
+    }
+  ]
+}

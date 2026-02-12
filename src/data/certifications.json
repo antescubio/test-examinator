@@ -1,0 +1,104 @@
+[
+  {
+    "id": "az-900",
+    "name": "AZ-900",
+    "fullName": {
+      "es": "Azure Fundamentals",
+      "en": "Azure Fundamentals"
+    },
+    "provider": "Microsoft",
+    "icon": "microsoft",
+    "color": "#0078D4",
+    "examDuration": 60,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "questionsPerExam": 40,
+    "totalQuestionsInBank": 10,
+    "topics": ["Cloud Concepts", "Azure Architecture", "Azure Services", "Security", "Pricing"]
+  },
+  {
+    "id": "az-104",
+    "name": "AZ-104",
+    "fullName": {
+      "es": "Azure Administrator",
+      "en": "Azure Administrator"
+    },
+    "provider": "Microsoft",
+    "icon": "microsoft",
+    "color": "#0078D4",
+    "examDuration": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "questionsPerExam": 50,
+    "totalQuestionsInBank": 10,
+    "topics": ["Identity", "Storage", "Compute", "Networking", "Monitoring"]
+  },
+  {
+    "id": "az-204",
+    "name": "AZ-204",
+    "fullName": {
+      "es": "Azure Developer Associate",
+      "en": "Azure Developer Associate"
+    },
+    "provider": "Microsoft",
+    "icon": "microsoft",
+    "color": "#0078D4",
+    "examDuration": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "questionsPerExam": 50,
+    "totalQuestionsInBank": 10,
+    "topics": ["Azure Compute", "Azure Storage", "Azure Security", "Monitoring", "Integration"]
+  },
+  {
+    "id": "az-305",
+    "name": "AZ-305",
+    "fullName": {
+      "es": "Azure Solutions Architect Expert",
+      "en": "Azure Solutions Architect Expert"
+    },
+    "provider": "Microsoft",
+    "icon": "microsoft",
+    "color": "#0078D4",
+    "examDuration": 120,
+    "passingScore": 700,
+    "maxScore": 1000,
+    "questionsPerExam": 50,
+    "totalQuestionsInBank": 10,
+    "topics": ["Design Solutions", "Identity", "Data Storage", "Business Continuity", "Infrastructure"]
+  },
+  {
+    "id": "mcd-level-1",
+    "name": "MCD-Level-1",
+    "fullName": {
+      "es": "MuleSoft Certified Developer - Level 1",
+      "en": "MuleSoft Certified Developer - Level 1"
+    },
+    "provider": "MuleSoft",
+    "icon": "mulesoft",
+    "color": "#00A3E0",
+    "examDuration": 120,
+    "passingScore": 70,
+    "maxScore": 100,
+    "questionsPerExam": 60,
+    "totalQuestionsInBank": 10,
+    "topics": ["Anypoint Platform", "API Design", "DataWeave", "Flow Design", "Error Handling"]
+  },
+  {
+    "id": "mcia",
+    "name": "MCIA",
+    "fullName": {
+      "es": "MuleSoft Certified Integration Architect",
+      "en": "MuleSoft Certified Integration Architect"
+    },
+    "provider": "MuleSoft",
+    "icon": "mulesoft",
+    "color": "#00A3E0",
+    "examDuration": 120,
+    "passingScore": 70,
+    "maxScore": 100,
+    "questionsPerExam": 60,
+    "totalQuestionsInBank": 10,
+    "topics": ["Architecture", "API-Led Connectivity", "Performance", "Security", "Deployment"]
+  }
+]
